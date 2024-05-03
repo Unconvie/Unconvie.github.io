@@ -1,6 +1,9 @@
 :root{
 	/* --transition: 2s cubic-bezier(.2, .6, 0, 1); */
-	--transition: 1.5s cubic-bezier(.54,.29,.23,1)
+	--transition: 1.5s cubic-bezier(.54,.29,.23,1);
+	/* настройка перелистывания */
+
+	--index: calc(1vw + 1vh)
 }
 
 @font-face{
@@ -31,7 +34,7 @@
 	height:100vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 2fr 0.5fr 0.5fr 1fr;
+	grid-template-rows: 3fr 0.5fr 0.5fr 0.5fr 1fr;
 }
 .cite__name{
 	color: rgb(241, 231, 197);
@@ -43,7 +46,8 @@
 	justify-content:end;
 
 }
-.guide__name, .xiao__status{
+.guide__name, .xiao__status, .guide{
+	/* устранение багов перелистывания */
 	will-change: transform;
 	transition: var(--transition) !important;
 	
@@ -51,6 +55,12 @@
 	text-shadow: 0 0 18px rgb(189, 162, 82);
 	font-weight: 600;
 	letter-spacing: 0.5vw;
+}
+.guide{
+	display: grid;
+	grid-area: 4/2/4/2;
+	text-indent: 14vw;
+	font-size: 1.5vw;
 }
 
 .guide__name{
@@ -64,7 +74,32 @@
 	grid-area: 3/2/3/2;
 	text-indent: 2vw;
 }
+/* .main__title::before{
+	content:''; */
+	/* так как работаем с псевдо элементами */
+/* 
+	position: absolute;
+	z-index: 100;
+	height: 100vh;
+	width: calc(var(--index)*2);
+	background-image: url(../img/semi/semi-1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}  */
+.artifacts{
+	display: grid;
+	grid-template-columns: ;
 
+	position: relative;
+	height:100vh;
+	display: grid;
+}
+.art{
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+}
 
 
 
@@ -101,12 +136,15 @@ html, body{
 	inset:0;
 	z-index: 1;
 	box-shadow: inset 0 0 250px rgb(0, 0, 0, 0.3);
+	/* виньетирование */
 }
 .slider__item{
 	overflow: hidden;
+	/* устранение наплыва слоя на слой */
 }
 .slider__wrapper{
 	transition: var(--transition) !important;
 	will-change:transform;
 	transform-style: preserve-3d;
+	/* устранение пробелов на границе слайдов */
 }

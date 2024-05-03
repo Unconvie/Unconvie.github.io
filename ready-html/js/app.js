@@ -5,7 +5,7 @@ new Swiper('.slider', {
 		enabled: true,
 		sensitivity:7
 	},
-	spaceBetween: 18,
+	spaceBetween: 7,
 	parallax:true,
 	//freeMode:true
 	
