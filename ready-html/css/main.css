@@ -1,5 +1,6 @@
 :root{
-	--transition: 2s cubic-bezier(.2, .6, 0, 1);
+	/* --transition: 2s cubic-bezier(.2, .6, 0, 1); */
+	--transition: 1.5s cubic-bezier(.54,.29,.23,1)
 }
 
 @font-face{
@@ -11,24 +12,59 @@
 	src:url(../fonts/raleway-black.woff2);
 	font-weight: 900;
 }
-.main__title{
+/* .main__title{
 	position: relative;
 	height:100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-
-
-	
 }
 .guide__name{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	
+} */
+.main__title{
+	position: relative;
+	height:100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2fr 0.5fr 0.5fr 1fr;
 }
+.cite__name{
+	color: rgb(241, 231, 197);
+	display: grid;
+	font-size: 1vw;
+	letter-spacing: 0.2vw;
+	grid-area: 1/2/1/2;
+	position: relative;
+	justify-content:end;
+
+}
+.guide__name, .xiao__status{
+	will-change: transform;
+	transition: var(--transition) !important;
+	
+	color: rgb(248, 232, 181);
+	text-shadow: 0 0 18px rgb(189, 162, 82);
+	font-weight: 600;
+	letter-spacing: 0.5vw;
+}
+
+.guide__name{
+	font-size: 4.2vw;
+	display:grid;
+	grid-area: 2/2/2/2;
+}
+.xiao__status{
+	font-size: 3vw;
+	display:grid;
+	grid-area: 3/2/3/2;
+	text-indent: 2vw;
+}
+
 
 
 
@@ -41,6 +77,7 @@ html, body{
 	height: 100%;
 	background-color:rgb(0, 0, 0);
 	font-family: raleway_f, sans-serif;
+	color: aliceblue;
 }
 
 .slider{
