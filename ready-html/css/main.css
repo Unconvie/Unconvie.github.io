@@ -15,28 +15,17 @@
 	src:url(../fonts/raleway-black.woff2);
 	font-weight: 900;
 }
-/* .main__title{
-	position: relative;
-	height:100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-.guide__name{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-} */
+
 .main__title{
+	/* первый слайд */
 	position: relative;
 	height:100vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 3fr 0.5fr 0.5fr 0.5fr 1fr;
 }
-.cite__name{
+.site__name{
+	/* название сайта на первом слайде */
 	color: rgb(241, 231, 197);
 	display: grid;
 	font-size: 1vw;
@@ -62,7 +51,6 @@
 	text-indent: 14vw;
 	font-size: 1.5vw;
 }
-
 .guide__name{
 	font-size: 4.2vw;
 	display:grid;
@@ -74,32 +62,150 @@
 	grid-area: 3/2/3/2;
 	text-indent: 2vw;
 }
-/* .main__title::before{
-	content:''; */
-	/* так как работаем с псевдо элементами */
-/* 
-	position: absolute;
-	z-index: 100;
-	height: 100vh;
-	width: calc(var(--index)*2);
-	background-image: url(../img/semi/semi-1.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}  */
-.artifacts{
+
+.arts{
 	display: grid;
-	grid-template-columns: ;
+	grid-template-columns:  10fr 10fr 20fr 50fr 1fr;
+	grid-template-rows: 1fr 2fr 2fr 2fr;
 
 	position: relative;
 	height:100vh;
-	display: grid;
+	
 }
 .art{
+	height: 13vw;
+	width: 13vw;
+	background-repeat: no-repeat;
+	background-size: 13vw;
+	position: relative;
+}
+.arts-slide-caption{
+	font-size: 5.2vw;
+	
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+	font-weight: 600;
+	letter-spacing: 0.5vw;
+	grid-area: 1/1/1/4;
+	justify-self: center;
+	align-self: center;
+}
+.purple, .glad-anemo, .charge{
+	font-size: 4vw;
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+	font-weight: 500;
+}
+
+
+/* доп таблица с основными статами */
+.table{
+	height: 100%;
+	background-color:rgba(0, 0, 0, 0.5);
+	grid-area: 2/2/4/5;
+	border-style: solid;
+	border-color: rgba(236, 238, 130, 0.3);
+	border-radius:  7px 7px 7px 7px;
+
+}
+.main_stats{
+	position: absolute;
+	background-size: cover;
 	height: 100%;
 	width: 100%;
-	background-repeat: no-repeat;
+	display: grid;
+	grid-template-columns: 4fr 1fr 1fr 1fr 0.5fr;
+	grid-template-rows: 0.1fr 0.8fr 0.5fr 4fr;
 }
+.goblet, .circlet, .sands{
+	background-size: min(15.5vw,10vh);
+	height: min(15.5vw,10vh);
+	width: min(15.5vw,10vh);
+	position: absolute;
+	background-size: cover;
+	margin-top: 4vh;
+	align-self: center;
+	justify-self: center;
+	
+}
+.goblet_cap, .circlet_cap, .sands_cap{
+	margin: 1vw;
+	font-size: max(1.8vh,1.4vw);
+	justify-self: center;
+	position: absolute;
+	bottom: 0;
+}
+.goblet_cap{
+	grid-area: 3/3/3/3;
+}
+.circlet_cap{
+	grid-area: 3/4/3/4;
+}
+.sands_cap{
+	grid-area: 3/2/3/2;
+}
+
+
+.sands{
+
+	grid-area: 2/2/2/2;
+}
+.goblet{
+	grid-area: 2/3/2/3;
+}
+.circlet{
+	grid-area: 2/4/2/4;
+}
+/* ---------------------------------- */
+
+
+.glad-anemo{
+	text-indent: -20px;
+}
+.purple{
+	text-indent: 4px;
+}
+.purple{
+	align-self: center;
+	grid-area: 2/1/2/1;
+}
+.purple_discription, .charge_discription, .glad-anemo_discription{
+	padding: 10px;
+	background-color:rgba(0, 0, 0, 0.5);
+	border-style: solid;
+	border-color: rgba(236, 238, 130, 0.3);
+	/* -moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border-radius: 7px 7px 7px 7px; */
+	border-radius:  7px 7px 7px 7px;
+	
+	
+	color: rgb(248, 232, 181);
+	text-shadow: 0 0 18px rgb(189, 162, 82);
+	letter-spacing: 0.1vw;
+	font-size: 1.5vw;
+	align-self: center;
+}
+.purple_discription{
+	grid-area: 2/2/2/4;
+}
+.arts .charge{
+	align-self: center;
+	grid-area: 3/2/3/2;
+}
+.charge_discription{
+	grid-area: 3/3/3/5;
+}
+.arts .glad-anemo{
+	align-self: center;
+	grid-area: 4/3/4/3;
+	justify-self: center;
+}
+.glad-anemo_discription{
+	grid-area: 4/4/4/5;
+}
+
+	
+
 
 
 
@@ -147,4 +253,89 @@ html, body{
 	will-change:transform;
 	transform-style: preserve-3d;
 	/* устранение пробелов на границе слайдов */
+}
+@media(max-width: 750px){
+	/* для экрана меньше 760px */
+	.slider__layer{
+		background-position: center  !important;
+	}
+	.guide__name{
+		font-size: 7vw !important;
+	}
+	.xiao__status{
+		font-size: 4vw !important;
+	}
+	.site__name{
+		font-size: 3vw;
+	}
+	.guide{
+		font-size: 3vw;
+	}
+	.art{
+		height: 25vw;
+		width: 25vw;
+		background-size: 25vw;
+	}
+	.arts{
+		
+		grid-template-columns:  10fr 10fr 10fr 10fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+	.charge{
+		grid-area: 3/1/3/1 !important;
+		text-indent: 4px;
+	}
+	.glad-anemo{
+		grid-area: 4/1/4/1 !important;
+		
+	}
+	.purple_discription, .charge_discription, .glad-anemo_discription{
+		font-size: 2.5vw !important;
+	}
+	.charge_discription{
+		grid-area: 3/2/3/5 !important;
+	}
+	.glad-anemo_discription{
+		grid-area: 4/2/4/5 !important;
+	}
+	.purple_discription{
+		grid-area: 2/2/2/5 !important;
+	}
+	.arts-slide-caption{
+		grid-area: 1/1/1/2;
+		text-indent: 6vw;
+	}
+	.goblet, .circlet, .sands{
+		
+		background-size: min(15.5vw,10vh);
+		height: min(15.5vw,10vh);
+		width: min(15.5vw,10vh);
+		position: absolute;
+		background-size: cover;
+		margin-top: -1vh !important;
+	
+	
+		
+	}
+	.goblet_cap, .circlet_cap, .sands_cap{
+		margin: 1vw;
+		font-size: max(1.5vh,1.5vw);
+		justify-self: center;
+		position: absolute;
+		bottom: 0;
+	}
+	.main_stats{
+		position: absolute;
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 1fr 0.2fr !important;
+		grid-template-rows: 0.2fr 1fr 0.5fr 7fr !important;
+	}
+
+
+
+
+	
 }

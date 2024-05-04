@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CharGuide</title>
+				<link rel="shortcut icon" type="image/png" href="img/cite-icon.png">
 
         <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
         <script src="libs/swiper/swiper-bundle.min.js" defer></script>
@@ -18,29 +19,50 @@
         <div class="swiper slider">
             <div class="swiper-wrapper slider__wrapper">
 
-
+<!-- ПЕРВЫЙ СЛАЙД -->
 							<div class="swiper-slide slider__item">
 								<div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(img/xiao-bg/back-layer.jpg);"></div>
 								<div class="main__title">
 									<div class="guide__name" data-swiper-parallax="10%" >Xiao</div>
 									<div class="xiao__status" data-swiper-parallax="15%" >Vigilant Yaksha</div>
 									<div class="guide" data-swiper-parallax="17%" >Guide</div>
-									<div class="cite__name">CharGuide</div>
+									<div class="site__name">CharGuide</div>
 								</div>
 								<div class="slider__layer" data-swiper-parallax="33%" style="background-image: url(img/xiao-bg/mid-layer.png);"></div>
+								<!-- частички -->
 								<canvas class="particles slider__layer" data-swiper-parallax="20%" data-color="#E1A95F"></canvas>
 								<div class="slider__layer" data-swiper-parallax="15%" style="background-image: url(img/xiao-bg/front-layer.png);"></div>
 							</div>
 
-
+<!-- ВТОРОЙ СЛАЙД -->
 							<div class="swiper-slide slider__item">
 								<div class="slider__layer" style="background-image: url(img/screen-2/blurred.jpg);"></div>
+								<div class="main_stats">
+									<div class="table"></div>
 
-								<div class="artifacts">
-									<div class="art" style="background-image: url(img/artifacts/purple.png);"></div>
-									<div class="art" style="background-image: url(img/artifacts/charge.png);"></div>
-									<div class="art" style="background-image: url(img/artifacts/anemo.png);"></div>
-									<div class="art" style="background-image: url(img/artifacts/glad.png);"></div>
+									<div class="goblet" style="background-image: url(img/artifacts/goblet.png);" ></div>
+									<div class="goblet_cap">Anemo DMG%<br>or ATK%</div>
+									<div class="sands" style="background-image: url(img/artifacts/sands.png);"></div>
+									<div class="sands_cap">ATK%</div>
+									<div class="circlet" style="background-image: url(img/artifacts/circlet.png);"></div>
+									<div class="circlet_cap">CRIT Rate<br>or CRIT DMG</div> 
+
+									<!-- <div class="goblet" style="background-image: url(img/artifacts/goblet.png);" >Anemo DMG%<br>or ATK%</div>
+									<div class="goblet_cap"></div>
+									<div class="sands" style="background-image: url(img/artifacts/sands.png);">ATK%</div>
+									<div class="sands_cap"></div>
+									<div class="circlet" style="background-image: url(img/artifacts/circlet.png);">CRIT Rate<br>or CRIT DMG</div>
+									<div class="circlet_cap"></div>  -->
+								</div>
+
+								<div class="arts">
+									<div class="arts-slide-caption">Artifacts</div>
+									<div class="art purple" style="background-image: url(img/artifacts/purple.png);">1</div>
+									<div class="purple_discription">&#9826;4p Vermillion Hereafter&#9826;<br><br>ATK +18%<br>ATK +10% When HP Decreases, When Elemental Burst Is Used ATK +8%(Stacks Up To 4 Times)</div>
+									<div class="art charge" style="background-image: url(img/artifacts/charge.png);">2</div>
+									<div class="charge_discription">&#9826;4p Marechaussee Hunter&#9826;<br><br>Normal And Charged Attack DMD +15%<br>When HP Increases Or Decreases, CRIT Rate +12% (Stacks Up To 3 Times)</div>
+									<div class="art glad-anemo" style="background-image: url(img/artifacts/glad-anemo.png);">3</div>
+									<div class="glad-anemo_discription">&#9826;2p Any Attack Piece And 2p Viridescent Venerer&#9826;<br><br>ATK +18%<br>Anemo DMG +15%</div>
 								</div>
 
 							</div>
