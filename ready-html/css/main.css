@@ -16,6 +16,7 @@
 	font-weight: 900;
 }
 
+/* ПЕРВЫЙ СЛАЙД */
 .main__title{
 	/* первый слайд */
 	position: relative;
@@ -62,53 +63,12 @@
 	grid-area: 3/2/3/2;
 	text-indent: 2vw;
 }
+/* --------------------- */
 
 
-.purple, .purple_discription, .charge, .charge_discription, .glad-anemo, .glad-anemo_discription{
-	/* плавное перемещение */
-	overflow: hidden;
-	will-change: transform;
-	transition: var(--transition) !important;
-}
-.arts{
-	display: grid;
-	grid-template-columns:  10fr 10fr 20fr 50fr 1fr;
-	grid-template-rows: 1fr 2fr 2fr 2fr;
-
-	position: relative;
-	height:100vh;
-	
-}
-.art{
-	height: 13vw;
-	width: 13vw;
-	background-repeat: no-repeat;
-	background-size: 13vw;
-	position: relative;
-}
-.arts-slide-caption{
-	overflow: hidden;
-	will-change: transform;
-	transition: var(--transition) !important;
-	font-size: 5.2vw;
-	
-	color: rgb(225, 241, 255);
-	text-shadow: 0 0 18px rgb(135, 166, 194);
-	font-weight: 600;
-	letter-spacing: 0.5vw;
-	grid-area: 1/1/1/4;
-	justify-self: center;
-	align-self: center;
-}
-.purple, .glad-anemo, .charge{
-	font-size: 4vw;
-	color: rgb(225, 241, 255);
-	text-shadow: 0 0 18px rgb(135, 166, 194);
-	font-weight: 500;
-}
 
 
-/* доп таблица с основными статами */
+/* доп таблица с основными статами ВТОРОЙ СЛАЙД */
 .table{
 	height: 100%;
 	background-color:rgba(0, 0, 0, 0.5);
@@ -154,8 +114,6 @@
 .sands_cap{
 	grid-area: 3/2/3/2;
 }
-
-
 .sands{
 
 	grid-area: 2/2/2/2;
@@ -169,11 +127,56 @@
 /* ---------------------------------- */
 
 
+
+/* ВТОРОЙ СЛАЙД */
+.purple, .purple_discription, .charge, .charge_discription, .glad-anemo, .glad-anemo_discription{
+	/* плавное перемещение */
+	overflow: hidden;
+	will-change: transform;
+	transition: var(--transition) !important;
+}
+.arts{
+	display: grid;
+	grid-template-columns:  10fr 10fr 20fr 50fr 1fr;
+	grid-template-rows: 1fr 2fr 2fr 2fr;
+
+	position: relative;
+	height:100vh;
+	
+}
+.art{
+	height: 13vw;
+	width: 13vw;
+	background-repeat: no-repeat;
+	background-size: 13vw;
+	position: relative;
+}
+.arts-slide-caption{
+	overflow: visible;
+	will-change: transform;
+	transition: var(--transition) !important;
+	font-size: 5.2vw;
+	
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+	font-weight: 600;
+	letter-spacing: 0.5vw;
+	grid-area: 1/1/1/4;
+	justify-self: center;
+	align-self: center;
+}
+.purple, .glad-anemo, .charge{
+	overflow:visible;
+	font-size: 4vw;
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+	font-weight: 500;
+}
 .glad-anemo{
-	text-indent: -20px;
+	text-indent: -2vw;
 }
 .purple{
-	text-indent: 4px;
+	text-indent: 1vw;
 }
 .purple{
 	align-self: center;
@@ -213,8 +216,157 @@
 .glad-anemo_discription{
 	grid-area: 4/4/4/5;
 }
+/* --------------------------------------- */
 
+/* ТРЕТИЙ СЛАЙД */
+.tier_1{
+	grid-area: 2/1/2/1;
+}
+.tier_2{
+	grid-area: 4/1/4/1;
+}
+.tier_3{
+	grid-area: 6/1/6/1;
+}
+.tier_1, .tier_2, .tier_3{
+	letter-spacing: 0.1vh;
+	justify-self: center;
+	align-self: center;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	overflow:visible;
+	font-size: 3vh;
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+	font-weight: 900;
 	
+}
+.weap-slide-caption{
+	overflow:visible;
+	overflow: hidden !important;
+	will-change: transform;
+	transition: var(--transition) !important;
+	font-size: 5.2vw;
+	
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+	font-weight: 600;
+	letter-spacing: 0.5vw;
+	grid-area: 1/2/1/8;
+	justify-self: center;
+	align-self: center;
+}
+.weap_tier_1_cap, .weap_tier_2_cap{
+	overflow:visible;
+	font-size: 2.5vh;
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+	font-weight: 500;
+}
+.weap_tier_3_cap{
+	overflow:visible;
+	font-size: 2.2vh;
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+	font-weight: 500;
+}
+.weap_tier_1_cap, .weap_tier_2_cap, .weap_tier_3_cap{
+	overflow: hidden !important;
+	will-change: transform;
+	transition: var(--transition) !important;
+
+	align-self: center;
+	padding: 10px;
+	background-color:rgba(0, 0, 0, 0.5);
+	border-style: solid;
+	border-color: rgba(236, 238, 130, 0.3);
+
+	border-radius:  7px 7px 7px 7px;
+}
+
+.weap_tier_1_cap{
+	grid-area: 2/9/2/9;
+}
+.weap_tier_2_cap{
+	grid-area: 4/9/4/9;
+}
+.weap_tier_3_cap{
+	grid-area: 6/9/6/9;
+}
+
+.weapons{
+	display: grid;
+	grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr 6fr 0.2fr;
+	grid-template-rows: 1.5fr 3fr 0.2fr 3fr 0.2fr 3fr 0.2fr;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-size: cover;
+}
+
+
+.weap_tier_1 *, .weap_tier_2 *, .weap_tier_3 *{
+	margin-top: 0.5vh;
+
+	background-size: max(100%, 4vw);
+	height: 26vh;
+	width: 5.1vw;
+	position: absolute;
+	background-size: cover;
+}
+.weap_tier_1, .weap_tier_2, .weap_tier_3{
+	background-color: rgba(0, 0, 0, 0.1);
+	border-style: solid;
+	border-color: rgba(236, 238, 130, 0.3);
+	box-shadow: 0 0 18px rgba(245, 234, 87, 0.3);
+	border-radius:  7px 7px 7px 7px;
+}
+.weap_tier_1{
+	grid-area: 2/2/2/4;
+}
+.weap_tier_2{
+	grid-area: 4/2/4/4;
+}
+.weap_tier_3{
+	grid-area: 6/2/6/8;
+}
+
+.Jade{
+
+	grid-area: 2/2/2/2;
+}
+.Homa {
+	grid-area: 2/3/2/3;
+}
+
+.Vortex{
+	grid-area: 4/2/4/2;
+}
+.Calamity{
+	grid-area: 4/3/4/3;
+}
+
+.Scarlet{
+	grid-area: 6/2/6/2;
+}
+.Lightning{
+	grid-area: 6/3/6/3;
+}
+.Skyward{
+	grid-area: 6/4/6/4;
+}
+.Lithic{
+	grid-area: 6/5/6/5;
+}
+.Deathmatch{
+	grid-area: 6/6/6/6;
+}
+.Drill{
+	grid-area: 6/7/6/7;
+}
+
+/* ------------------------------------- */
+
 
 
 
@@ -230,7 +382,6 @@ html, body{
 	font-family: raleway_f, sans-serif;
 	color: aliceblue;
 }
-
 .slider{
 	height: 100%;
 }
@@ -265,7 +416,16 @@ html, body{
 	/* устранение пробелов на границе слайдов */
 }
 @media(max-width: 750px){
-	/* для экрана меньше 760px */
+	/* для экрана меньше 750px */
+	.purple, .purple_discription, .charge, .charge_discription, .glad-anemo, .glad-anemo_discription{
+		/* плавное перемещение */
+		overflow: hidden !important;
+		will-change: transform;
+		transition: var(--transition) !important;
+	}
+	.purple, .charge{
+		text-indent: 1vw !important;
+	}
 	.slider__layer{
 		background-position: center  !important;
 	}
@@ -287,7 +447,6 @@ html, body{
 		background-size: 25vw;
 	}
 	.arts{
-		
 		grid-template-columns:  10fr 10fr 10fr 10fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr;
 	}
@@ -297,7 +456,8 @@ html, body{
 	}
 	.glad-anemo{
 		grid-area: 4/1/4/1 !important;
-		
+		text-indent: -2vw !important;
+		overflow: visible !important;
 	}
 	.purple_discription, .charge_discription, .glad-anemo_discription{
 		font-size: 2.5vw !important;
@@ -316,16 +476,12 @@ html, body{
 		text-indent: 6vw;
 	}
 	.goblet, .circlet, .sands{
-		
 		background-size: min(15.5vw,10vh);
 		height: min(15.5vw,10vh);
 		width: min(15.5vw,10vh);
 		position: absolute;
 		background-size: cover;
 		margin-top: -1vh !important;
-	
-	
-		
 	}
 	.goblet_cap, .circlet_cap, .sands_cap{
 		margin: 1vw;
@@ -345,7 +501,78 @@ html, body{
 	}
 
 
+	/* ТРЕТИЙ СЛАЙД */
+	.weap-slide-caption{
+		grid-area: 1/2/1/4;
+	}
+	.weapons{
+		grid-template-columns: 0.7fr 0.7fr 0.7fr 0.1fr 5fr !important;
+		grid-template-rows: 1.5fr 3fr 0.2fr 3fr 0.2fr 3fr 0.2fr;
 
+	}
 
+	.weap_tier_1{
+		background-color: rgb(0, 0, 0, 0.5);
+		grid-area: 2/2/2/4 !important;
+	}
+	.weap_tier_2{
+		background-color: rgb(0, 0, 0, 0.5);
+		grid-area: 4/2/4/4 !important;
+	}
+	.weap_tier_3{
+		background-color: rgb(0, 0, 0, 0.5);
+		grid-area: 6/2/6/4 !important;
+	}
 	
+	.Jade{
+		grid-area: 2/2/2/2 !important;
+	}
+	.Homa {
+		grid-area: 2/3/2/3 !important;
+	}
+	
+	.Vortex{
+		grid-area: 4/2/4/2 !important;
+	}
+	.Calamity{
+		grid-area: 4/3/4/3 !important;
+	}
+	
+	.Scarlet{
+		grid-area: 6/2/6/2 !important;
+	}
+	.Lightning{
+		grid-area: 6/3/6/3 !important;
+	}
+	.Jade, .Homa, .Vortex, .Calamity, .Scarlet, .Lightning{
+		vertical-align: bottom!important;
+		background-size: max(100%, 11vw);
+		height: min(26vh, 29vw);
+		overflow: hidden !important;
+		position: absolute;
+		width: 10vw;
+		background-position-y:bottom !important ;
+		background-repeat: no-repeat;
+	}
+	.Skyward, .Lithic, .Deathmatch, .Drill{
+		display: none;
+	}
+
+	.weap_tier_1_cap{
+		grid-area: 2/5/2/5;
+		font-size: 2.5vh;
+	}
+	.weap_tier_2_cap{
+		grid-area: 4/5/4/5;
+		font-size: 2.5vh;
+	}
+	.weap_tier_3_cap{
+		grid-area: 6/5/6/5;
+		font-size: 2.2vh;
+	}
+
+
+
+
+
 }
