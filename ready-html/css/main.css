@@ -63,6 +63,13 @@
 	text-indent: 2vw;
 }
 
+
+.purple, .purple_discription, .charge, .charge_discription, .glad-anemo, .glad-anemo_discription{
+	/* плавное перемещение */
+	overflow: hidden;
+	will-change: transform;
+	transition: var(--transition) !important;
+}
 .arts{
 	display: grid;
 	grid-template-columns:  10fr 10fr 20fr 50fr 1fr;
@@ -80,6 +87,9 @@
 	position: relative;
 }
 .arts-slide-caption{
+	overflow: hidden;
+	will-change: transform;
+	transition: var(--transition) !important;
 	font-size: 5.2vw;
 	
 	color: rgb(225, 241, 255);
