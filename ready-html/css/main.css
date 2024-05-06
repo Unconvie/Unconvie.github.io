@@ -293,6 +293,14 @@
 .weap_tier_3_cap{
 	grid-area: 6/9/6/9;
 }
+.weapons .slider__layer::before{
+	content: '';
+	position: absolute;
+	inset:0;
+	z-index: 1;
+	box-shadow: none;
+	/* виньетирование */
+}
 
 .weapons{
 	display: grid;
@@ -315,7 +323,7 @@
 	background-size: cover;
 }
 .weap_tier_1, .weap_tier_2, .weap_tier_3{
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.4);
 	border-style: solid;
 	border-color: rgba(236, 238, 130, 0.3);
 	box-shadow: 0 0 18px rgba(245, 234, 87, 0.3);
@@ -331,8 +339,11 @@
 	grid-area: 6/2/6/8;
 }
 
-.Jade{
+.slider__layer.Jade, .Homa.slider__layer, .Vortex.slider__layer, .Calamity.slider__layer, .Scarlet.slider__layer, .Lightning.slider__layer, .Skyward.slider__layer, .Lithic.slider__layer, .Deathmatch.slider__layer, .Drill.slider__layer{
+	box-shadow: none !important;
+}
 
+.Jade{
 	grid-area: 2/2/2/2;
 }
 .Homa {
@@ -502,12 +513,21 @@ html, body{
 
 
 	/* ТРЕТИЙ СЛАЙД */
+	.weapons .slider__layer::before{
+		content: '';
+		position: absolute;
+		inset:0;
+		z-index: 1;
+		box-shadow: none;
+		/* виньетирование */
+	}
 	.weap-slide-caption{
+		overflow: visible !important;
 		grid-area: 1/2/1/4;
 	}
 	.weapons{
-		grid-template-columns: 0.7fr 0.7fr 0.7fr 0.1fr 5fr !important;
-		grid-template-rows: 1.5fr 3fr 0.2fr 3fr 0.2fr 3fr 0.2fr;
+		grid-template-columns: 0.7fr 0.7fr 0.7fr 0.1fr 5fr 0.1fr !important;
+		grid-template-rows: 1.5fr 3fr 0.2fr 3fr 0.2fr 3fr 0.3fr !important;
 
 	}
 
@@ -568,7 +588,7 @@ html, body{
 	}
 	.weap_tier_3_cap{
 		grid-area: 6/5/6/5;
-		font-size: 2.2vh;
+		font-size: 2vh;
 	}
 
 
