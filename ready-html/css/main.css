@@ -76,7 +76,7 @@
 	border-style: solid;
 	border-color: rgba(236, 238, 130, 0.3);
 	border-radius:  7px 7px 7px 7px;
-
+	box-shadow: 0 0 18px rgba(245, 234, 87, 0.3);
 }
 .main_stats{
 	position: absolute;
@@ -99,6 +99,8 @@
 	
 }
 .goblet_cap, .circlet_cap, .sands_cap{
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
 	margin: 1vw;
 	font-size: max(1.8vh,1.4vw);
 	justify-self: center;
@@ -130,7 +132,7 @@
 
 /* ВТОРОЙ СЛАЙД */
 .purple, .purple_discription, .charge, .charge_discription, .glad-anemo, .glad-anemo_discription{
-	/* плавное перемещение */
+	/* плавное перемещение и устранение наплыва */
 	overflow: hidden;
 	will-change: transform;
 	transition: var(--transition) !important;
@@ -280,8 +282,13 @@
 	background-color:rgba(0, 0, 0, 0.5);
 	border-style: solid;
 	border-color: rgba(236, 238, 130, 0.3);
-
+	/* -moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border-radius: 7px 7px 7px 7px; */
 	border-radius:  7px 7px 7px 7px;
+
+	
+	color: rgb(248, 232, 181);
+	text-shadow: 0 0 18px rgb(189, 162, 82);
 }
 
 .weap_tier_1_cap{
@@ -388,8 +395,8 @@
 	width: 100%;
 	position: absolute;
 	background-size: cover;
-	grid-template-rows: 1fr      0.1fr 2.5fr 0.1fr 3fr      0.1fr;
-	grid-template-columns: 0.1fr   1fr 1fr 1fr 0.5fr 1fr 1fr 1fr      0.1fr;
+	grid-template-rows: 1fr      0.7fr 2.5fr 0.1fr 3fr      0.1fr;
+	grid-template-columns: 0.2fr   1fr 1fr 1fr 0.5fr 1fr 1fr 1fr      0.2fr;
 }
 .talent-slide-caption{
 	overflow:visible;
@@ -404,6 +411,28 @@
 	letter-spacing: 0.5vw;
 	justify-self: center;
 	align-self: center;
+}
+.const_type_1{
+	grid-area: 2/2/2/5;
+}
+.const_type_2{
+	grid-area: 2/6/2/9;
+}
+.const_type_1, .const_type_2{
+	overflow: hidden;
+	will-change: transform;
+	transition: var(--transition) !important;
+
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+	font-weight: 600;
+	letter-spacing: 0.5vw;
+	justify-self: center;
+	align-self: center;
+	font-size: 4vw;
+	overflow:visible;
+
+
 }
 .C0{
 	grid-area: 3/2/3/5;
@@ -428,7 +457,7 @@
 }
 
 .E_C0, .NA_C0, .Q_C0, .E_C6, .NA_C6, .Q_C6{
-	
+	margin-top:2vh;
 	background-size: min(13vw,25vh);
 	height: min(13vw,25vh);
 	width: min(13vw,25vh);
@@ -494,18 +523,18 @@
 	grid-area: 5/6/5/9;
 }
 .C0_cap, .C6_cap{
-	overflow:visible;
 	font-size: 3.2vh;
-	color: rgb(225, 241, 255);
-	text-shadow: 0 0 18px rgb(135, 166, 194);
 	font-weight: 500;
 	letter-spacing:0.2dvh;
 
-	background-color: rgba(0, 0, 0, 0.4);
+	padding: 10px;
+	background-color:rgba(0, 0, 0, 0.5);
 	border-style: solid;
 	border-color: rgba(236, 238, 130, 0.3);
-	box-shadow: 0 0 18px rgba(245, 234, 87, 0.3);
+
 	border-radius:  7px 7px 7px 7px;
+	color: rgb(248, 232, 181);
+	text-shadow: 0 0 18px rgb(189, 162, 82);
 }
 
 
@@ -566,6 +595,9 @@ html, body{
 }
 @media(max-width: 750px){
 	/* для экрана меньше 750px */
+
+
+	/* ВТОРОЙ СЛАЙД */
 	.purple, .purple_discription, .charge, .charge_discription, .glad-anemo, .glad-anemo_discription{
 		/* плавное перемещение */
 		overflow: hidden !important;
@@ -648,6 +680,7 @@ html, body{
 		grid-template-columns: 2fr 1fr 1fr 1fr 0.2fr !important;
 		grid-template-rows: 0.2fr 1fr 0.5fr 7fr !important;
 	}
+	/* ------------------------ */
 
 
 	/* ТРЕТИЙ СЛАЙД */
@@ -728,6 +761,68 @@ html, body{
 		grid-area: 6/5/6/5;
 		font-size: 2vh;
 	}
+	/* ------------------------------ */
+
+	/* ЧЕТВЕРТЫЙ СЛАЙД */
+	.Talents{
+		grid-template-rows: 0.5fr 0.4fr 1fr 0.1fr 1.5fr 0.1fr 0.4fr 1fr 0.1fr 1.5fr      0.1fr;
+		grid-template-columns: 0.1fr   1fr 1fr 1fr 0.5fr 1fr 1fr 1fr      0.1fr;
+	}
+	.NA_1, .NA_2, .Q_1, .Q_2, .E_1, .E_2{
+		margin-top: 0.2vh;
+		font-size: 3vh;
+	}
+	.C0_cap, .C6_cap{
+		font-size: 2.2vh;
+	}
+	.const_type_1{
+		grid-area: 2/2/2/5;
+	}
+	.const_type_2{
+		grid-area: 7/2/7/5;
+	}
+	.C0{
+		grid-area: 3/2/3/5;
+	}
+	.C6{
+		grid-area: 8/2/8/5;
+	}
+	
+	.E_C0, .NA_C0, .Q_C0, .E_C6, .NA_C6, .Q_C6{
+		background-size: min(11vw,25vh);
+		height: min(11vw,25vh);
+		width: min(11vw,25vh);
+	}
+	
+	.E_C6{
+		grid-area: 8/2/8/2;
+	}
+	.NA_C6{
+		grid-area: 8/3/8/3;
+	}
+	.Q_C6{
+		grid-area: 8/4/8/4;
+	}
+	
+	.NA_2{
+		grid-area: 8/3/8/3;
+	}
+	.E_2{
+		grid-area: 8/2/8/2;
+	}
+	.Q_2{
+		grid-area: 8/4/8/4;
+	}
+	
+	.C0_cap{
+		grid-area: 5/2/5/9;
+	}
+	.C6_cap{
+		grid-area: 10/2/10/9;
+	}
+
+
+	/* ----------------------------------- */
 
 
 
