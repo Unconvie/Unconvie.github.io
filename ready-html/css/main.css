@@ -17,6 +17,41 @@
 }
 
 /* ПЕРВЫЙ СЛАЙД */
+
+[data-theme = "day"]{
+	.site__name{
+		color: rgb(25, 29, 58);
+	}
+	.guide__name, .xiao__status, .guide, .goblet_cap, .circlet_cap, .sands_cap, .arts-slide-caption, .purple, .glad-anemo, .charge, .purple_discription, .charge_discription, .glad-anemo_discription,
+	.tier_1, .tier_2, .tier_3,.weap-slide-caption, .weap_tier_3_cap, .weap_tier_1_cap, .weap_tier_2_cap, .weap_tier_3_cap,.talent-slide-caption, .const_type_1, .const_type_2, .NA_1, .NA_2, .Q_1, .Q_2, .E_1, .E_2,
+	.C0_cap, .C6_cap, .constellations-slide-caption, .reccs_title, .const_1, .const_2, .const_3, .const_4, .const_5, .const_6, .const_1_cap, .const_2_cap, .const_3_cap, .const_4_cap, .const_5_cap, .const_6_cap, .const_reccomended_1, .const_reccomended_2,
+	.const_reccomended_1_cap, .const_reccomended_2_cap, .consize_reccs, .teams-slide-caption, .t_1_text, .t-1_s-1_cap, .t-1_s-2_cap, .t-1_s-3_cap, .t-1_s-4_cap, .t-2_s-1_cap, .t-2_s-2_cap, .t-2_s-3_cap, .t-2_s-4_cap, .t-3_s-1_cap, .t-3_s-2_cap, .t-3_s-3_cap, .t-3_s-4_cap, .t-4_s-1_cap, .t-4_s-2_cap, .t-4_s-3_cap, .t-4_s-4_cap, 
+	.t-5_s-1_cap, .t-5_s-2_cap, .t-5_s-3_cap, .t-5_s-4_cap, .t-6_s-1_cap, .t-6_s-2_cap, .t-6_s-3_cap, .t-6_s-4_cap, .t-7_s-1_cap, .t-7_s-2_cap, .t-7_s-3_cap, .t-7_s-4_cap
+	{
+		color: rgb(25, 29, 58);
+		text-shadow: 0 0 18px rgb(25, 31, 77);
+	}
+
+
+	.table, .purple_discription, .charge_discription, .glad-anemo_discription, .weap_tier_1_cap, .weap_tier_2_cap, .weap_tier_3_cap,.weap_tier_1, .weap_tier_2, .weap_tier_3,.C0_cap, .C6_cap,
+	.const_1_cap, .const_2_cap, .const_3_cap, .const_4_cap, .const_5_cap, .const_6_cap, .const_reccomended_1_cap, .const_reccomended_2_cap, .consize_reccs,.t_1, .t_1_text, .t_2, .t_3, .t_4, .t_5, .t_6, .t_7
+	{
+		background-color:rgba(214, 231, 255, 0.5);
+		border-color: rgba(95, 147, 243, 0.3);
+		box-shadow: 0 0 18px rgba(70, 109, 182, 0.3);
+	}
+	.C0, .C6{
+		background-color: rgba(79, 138, 122, 0.4);
+	}
+	.table,.weap_tier_1, .weap_tier_2, .weap_tier_3, .const_reccomended_1_cap, .const_reccomended_2_cap, .t_1_text{
+		border-color: rgba(184, 95, 243, 0.3);
+		box-shadow: 0 0 18px rgba(131, 67, 173, 0.3);
+	}
+	.slider__layer::before{
+		box-shadow: inset 0 0 250px rgba(255, 255, 255, 0.3);
+	}
+}
+
 .main__title{
 	/* первый слайд */
 	position: relative;
@@ -978,7 +1013,7 @@ html, body{
 	position: absolute;
 	inset:0;
 	z-index: 1;
-	box-shadow: inset 0 0 250px rgb(0, 0, 0, 0.3);
+	box-shadow: inset 0 0 220px rgb(0, 0, 0, 0.3);
 	/* виньетирование */
 }
 .slider__item{
