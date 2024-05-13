@@ -683,13 +683,12 @@
 	width: 100%;
 	position: absolute;
 	background-size: cover;
-	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
-	grid-template-rows: 0.6fr 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr 2.5fr 0.1fr;
+	grid-template-columns: 0.1fr 0.3fr 0.3fr 0.3fr 0.3fr 0.25fr 0.3fr 0.3fr 0.3fr 0.3fr 0.1fr;
+	grid-template-rows: 0.6fr 0.1fr 0.4fr 1.3fr 0.1fr 0.4fr 1.3fr 0.1fr 0.4fr 1.3fr 0.1fr 0.4fr 1.3fr  0.1fr;
 }
-
 .teams-slide-caption{
-	grid-area: 1/2/1/3;
-	overflow:hidden;
+	grid-area: 1/2/1/4;
+	overflow:visible;
 	will-change: transform;
 	transition: var(--transition) !important;
 	font-size: 4.2vw;
@@ -701,7 +700,239 @@
 	justify-self: center;
 	align-self: center;
 }
+.t_1_text{
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+}
+.t-1_s-1_cap, .t-1_s-2_cap, .t-1_s-3_cap, .t-1_s-4_cap, .t-2_s-1_cap, .t-2_s-2_cap, .t-2_s-3_cap, .t-2_s-4_cap, .t-3_s-1_cap, .t-3_s-2_cap, .t-3_s-3_cap, .t-3_s-4_cap, .t-4_s-1_cap, .t-4_s-2_cap, .t-4_s-3_cap, .t-4_s-4_cap, 
+.t-5_s-1_cap, .t-5_s-2_cap, .t-5_s-3_cap, .t-5_s-4_cap, .t-6_s-1_cap, .t-6_s-2_cap, .t-6_s-3_cap, .t-6_s-4_cap, .t-7_s-1_cap, .t-7_s-2_cap, .t-7_s-3_cap, .t-7_s-4_cap{
+	font-size: min(3vh, 3vw);
+	justify-self: center;
+	align-self: center;
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+}
+.t_1, .t_1_text, .t_2, .t_3, .t_4, .t_5, .t_6, .t_7{
+	background-color:rgba(0, 0, 0, 0.5);
+	border-style: solid;
+	border-color: rgba(236, 238, 130, 0.3);
+	box-shadow: 0 0 18px rgba(245, 234, 87, 0.3);
+	border-radius:  7px 7px 7px 7px;
+}
+.t_1{
+	grid-area: 3/2/5/6;
+}
+.t_2{
+	grid-area: 6/2/8/6;
+}
+.t_3{
+	grid-area: 6/7/8/11;
+}
+.t_4{
+	grid-area: 9/2/11/6;
+}
+.t_5{
+	grid-area: 9/7/11/11;
+}
+.t_6{
+ grid-area: 12/2/14/6;
+}
+.t_7{
+	grid-area: 12/7/14/11;
+}
+.t_1_text{
+	font-size: max(1.6vh,0.9vw);
+	grid-area: 2/7/5/11;
+	border-color: rgba(130, 222, 238, 0.3);
+	box-shadow: 0 0 18px rgba(87, 213, 245, 0.3);
+}
+.t-1_s-1, .t-1_s-2, .t-1_s-3, .t-1_s-4, .t-2_s-1, .t-2_s-2, .t-2_s-3, .t-2_s-4, .t-3_s-1, .t-3_s-2, .t-3_s-3, .t-3_s-4, .t-4_s-1, .t-4_s-2, .t-4_s-3, .t-4_s-4,
+.t-5_s-1, .t-5_s-2, .t-5_s-3, .t-5_s-4, .t-6_s-1, .t-6_s-2, .t-6_s-3, .t-6_s-4, .t-7_s-1, .t-7_s-2, .t-7_s-3, .t-7_s-4
+{
+	margin-bottom: 2vh;
+	align-self: center;
+	justify-self: center;
+	background-repeat: no-repeat;
+	height: min(12vh, 10vw);
+	width: min(12vh, 10vw);
+	background-size: min(12vh, 10vw);
+	position: absolute;
+	background-size: cover;
+}
+.t-1_s-1{
+	grid-area: 4/2/4/2;
+}
+.t-1_s-1_cap{
+	grid-area: 3/2/3/2;
+}
+.t-1_s-2{
+	grid-area: 4/3/4/3;
+}
+.t-1_s-2_cap{
+	grid-area: 3/3/3/3;
+}
+.t-1_s-3{
+	grid-area: 4/4/4/4;
+}
+.t-1_s-3_cap{
+	grid-area: 3/4/3/4;
+}
+.t-1_s-4{
+	grid-area: 4/5/4/5;
+}
+.t-1_s-4_cap{
+	grid-area: 3/5/3/5;
+}
 
+.t-2_s-1{
+	grid-area: 7/2/7/2;
+}
+.t-2_s-1_cap{
+	grid-area: 6/2/6/2;
+}
+.t-2_s-2{
+	grid-area: 7/3/7/3;
+}
+.t-2_s-2_cap{
+	grid-area: 6/3/6/3;
+}
+.t-2_s-3{
+	grid-area: 7/4/7/4;
+}
+.t-2_s-3_cap{
+	grid-area: 6/4/6/4;
+}
+.t-2_s-4{
+	grid-area: 7/5/7/5;
+}
+.t-2_s-4_cap{
+	grid-area: 6/5/6/5;
+}
+
+.t-3_s-1{
+	grid-area: 7/7/7/7;
+}
+.t-3_s-1_cap{
+	grid-area: 6/7/6/7;
+}
+.t-3_s-2{
+	grid-area: 7/8/7/8;
+}
+.t-3_s-2_cap{
+	grid-area: 6/8/6/8;
+}
+.t-3_s-3{
+	grid-area: 7/9/7/9;
+}
+.t-3_s-3_cap{
+	grid-area: 6/9/6/9;
+}
+.t-3_s-4{
+	grid-area: 7/10/7/10;
+}
+.t-3_s-4_cap{
+	grid-area: 6/10/6/10;
+}
+
+.t-4_s-1{
+	grid-area: 10/2/10/2;
+}
+.t-4_s-1_cap{
+	grid-area: 9/2/9/2;
+}
+.t-4_s-2{
+	grid-area: 10/3/10/3;
+}
+.t-4_s-2_cap{
+	grid-area: 9/3/9/3;
+}
+.t-4_s-3{
+	grid-area: 10/4/10/4;
+}
+.t-4_s-3_cap{
+	grid-area: 9/4/9/4;
+}
+.t-4_s-4{
+	grid-area: 10/5/10/5;
+}
+.t-4_s-4_cap{
+	grid-area: 9/5/9/5;
+}
+
+.t-5_s-1{
+	grid-area: 10/7/10/7;
+}
+.t-5_s-1_cap{
+	grid-area: 9/7/9/7;
+}
+.t-5_s-2{
+	grid-area: 10/8/10/8;
+}
+.t-5_s-2_cap{
+	grid-area: 9/8/9/8;
+}
+.t-5_s-3{
+	grid-area: 10/9/10/9;
+}
+.t-5_s-3_cap{
+	grid-area: 9/9/9/9;
+}
+.t-5_s-4{
+	grid-area: 10/10/10/10;
+}
+.t-5_s-4_cap{
+	grid-area: 9/10/9/10;
+}
+
+.t-6_s-1{
+	grid-area: 13/2/13/2;
+}
+.t-6_s-1_cap{
+	grid-area: 12/2/12/2;
+}
+.t-6_s-2{
+	grid-area: 13/3/13/3;
+}
+.t-6_s-2_cap{
+	grid-area: 12/3/12/3;
+}
+.t-6_s-3{
+	grid-area: 13/4/13/4;
+}
+.t-6_s-3_cap{
+	grid-area: 12/4/12/4;
+}
+.t-6_s-4{
+	grid-area: 13/5/13/5;
+}
+.t-6_s-4_cap{
+	grid-area: 12/5/12/5;
+}
+
+.t-7_s-1{
+	grid-area: 13/7/13/7;
+}
+.t-7_s-1_cap{
+	grid-area: 12/7/12/7;
+}
+.t-7_s-2{
+	grid-area: 13/8/13/8;
+}
+.t-7_s-2_cap{
+	grid-area: 12/8/12/8;
+}
+.t-7_s-3{
+	grid-area: 13/9/13/9;
+}
+.t-7_s-3_cap{
+	grid-area: 12/9/12/9;
+}
+.t-7_s-4{
+	grid-area: 13/10/13/10;
+}
+.t-7_s-4_cap{
+	grid-area: 12/10/12/10;
+}
 
 
 
