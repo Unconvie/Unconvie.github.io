@@ -29,7 +29,7 @@
 	/* название сайта на первом слайде */
 	color: rgb(241, 231, 197);
 	display: grid;
-	font-size: 1vw;
+	font-size: min(1.7vw, 4vh);
 	letter-spacing: 0.2vw;
 	grid-area: 1/2/1/2;
 	position: relative;
@@ -74,9 +74,10 @@
 	background-color:rgba(0, 0, 0, 0.5);
 	grid-area: 2/2/4/5;
 	border-style: solid;
-	border-color: rgba(236, 238, 130, 0.3);
 	border-radius:  7px 7px 7px 7px;
-	box-shadow: 0 0 18px rgba(245, 234, 87, 0.3);
+	border-color: rgba(130, 222, 238, 0.3);
+	box-shadow: 0 0 18px rgba(87, 213, 245, 0.3);
+
 }
 .main_stats{
 	position: absolute;
@@ -542,6 +543,141 @@
 
 
 
+/* ПЯТЫЙ СЛАЙД */
+.constellations{
+	display: grid;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-size: cover;
+	grid-template-columns: 0.1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.1fr;
+	grid-template-rows: 0.6fr 0.1fr 1.2fr 0.1fr 1.2fr 0.1fr 2.5fr 0.1fr;
+}
+.const_reccs{
+	display: grid;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-size: cover;
+	grid-template-columns: 0.1fr 0.3fr 1.5fr 0.3fr 1.5fr 0.4fr;
+	grid-template-rows: 0.6fr 0.1fr 1.2fr 0.1fr 1.2fr 0.5fr 2fr 0.1fr;
+}
+.constellations-slide-caption, .reccs_title{
+	grid-area: 1/2/1/5;
+	overflow:hidden;
+	will-change: transform;
+	transition: var(--transition) !important;
+	font-size: 4.2vw;
+	
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+	font-weight: 600;
+	letter-spacing: 0.5vw;
+	justify-self: center;
+	align-self: center;
+}
+.reccs_title{
+	grid-area: 6/3/6/6;
+	font-size: 3.5vw;
+}
+.consize_reccs{
+	display: none;
+}
+.const_1, .const_2, .const_3, .const_4, .const_5, .const_6, .const_1_cap, .const_2_cap, .const_3_cap, .const_4_cap, .const_5_cap, .const_6_cap, .const_reccomended_1, .const_reccomended_2{
+	height:100%;
+	padding: 1.5vh;
+	overflow:visible;
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+	font-weight: 600;
+	letter-spacing: 0.1vw;
+	justify-self: center;
+	align-self: center;
+	
+}
+.const_reccomended_1, .const_reccomended_2{
+	color: rgb(255, 252, 225);
+	text-shadow: 0 0 18px rgb(194, 180, 135);
+}
+
+.const_reccomended_1{
+	grid-area: 7/2/7/2;
+}
+.const_reccomended_2{
+	grid-area: 7/4/7/4;
+}
+.const_reccomended_1_cap{
+	grid-area: 7/3/7/3;
+}
+.const_reccomended_2_cap{
+	grid-area: 7/5/7/5;
+}
+
+.const_1, .const_2, .const_3, .const_4, .const_5, .const_6, .const_reccomended_1, .const_reccomended_2{
+	font-size: 1.5vw;
+}
+.const_1_cap, .const_2_cap, .const_3_cap, .const_4_cap, .const_5_cap, .const_6_cap, .const_reccomended_1_cap, .const_reccomended_2_cap, .consize_reccs{
+	font-size: max(1.1vw, 1.65vh);
+	padding: 1.5vh;
+	background-color:rgba(0, 0, 0, 0.5);
+	border-style: solid;
+	border-color: rgba(236, 238, 130, 0.3);
+	box-shadow: 0 0 18px rgba(245, 234, 87, 0.3);
+	font-weight: 500;
+
+	border-radius:  7px 7px 7px 7px;
+	color: rgb(248, 232, 181);
+	text-shadow: 0 0 18px rgb(189, 162, 82);
+}
+.const_reccomended_1_cap, .const_reccomended_2_cap{
+	border-color: rgba(130, 222, 238, 0.3);
+	box-shadow: 0 0 18px rgba(87, 213, 245, 0.3);
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+}
+
+.const_1{
+	grid-area: 3/2/3/2;
+}
+.const_2{
+	grid-area: 3/4/3/4;
+}
+.const_3{
+	grid-area: 3/6/3/6;
+}
+.const_4{
+	grid-area: 5/2/5/2;
+}
+.const_5{
+	grid-area: 5/4/5/4;
+}
+.const_6{
+	grid-area: 5/6/5/6;
+}
+.const_1_cap{
+	grid-area: 3/3/3/3;
+}
+.const_2_cap{
+	grid-area: 3/5/3/5;
+}
+.const_3_cap{
+	grid-area: 3/7/3/7;
+}
+.const_4_cap{
+	grid-area: 5/3/5/3;
+}
+.const_5_cap{
+	grid-area: 5/5/5/5;
+}
+.const_6_cap{
+	grid-area: 5/7/5/7;
+}
+
+
+/* ---------------------------------------- */
+
+
+
 
 
 
@@ -596,6 +732,9 @@ html, body{
 @media(max-width: 750px){
 	/* для экрана меньше 750px */
 
+	.site__name{
+		font-size: 2.4vh !important;
+	}
 
 	/* ВТОРОЙ СЛАЙД */
 	.purple, .purple_discription, .charge, .charge_discription, .glad-anemo, .glad-anemo_discription{
@@ -789,9 +928,9 @@ html, body{
 	}
 	
 	.E_C0, .NA_C0, .Q_C0, .E_C6, .NA_C6, .Q_C6{
-		background-size: min(11vw,25vh);
-		height: min(11vw,25vh);
-		width: min(11vw,25vh);
+		background-size: min(10vw,10vh);
+		height: min(10vw,10vh);
+		width: min(10vw,10vh);
 	}
 	
 	.E_C6{
@@ -824,6 +963,82 @@ html, body{
 
 	/* ----------------------------------- */
 
+
+	/* ПЯТЫЙ СЛАЙД */
+.constellations{
+	grid-template-columns:0.1fr 0.6fr 0.1fr 6fr 0.1fr;
+	grid-template-rows: 0.3fr 0.1fr 0.6fr 0.1fr 0.6fr 0.1fr 0.6fr 0.1fr 0.6fr 0.1fr 0.6fr 0.1fr 0.6fr 0.1fr 1fr 0.1fr;
+}
+.constellations-slide-caption{
+	grid-area: 1/2/1/5;
+	font-size: 4.2vw;
+}
+.reccs_title, .const_reccomended_1, .const_reccomended_1_cap, .const_reccomended_2, .const_reccomended_2_cap{
+	display: none;
+}
+.const_1, .const_2, .const_3, .const_4, .const_5, .const_6, .const_1_cap, .const_2_cap, .const_3_cap, .const_4_cap, .const_5_cap, .const_6_cap{
+	width:100%;
+	padding: 0.5vh;
+}
+.const_1, .const_2, .const_3, .const_4, .const_5, .const_6{
+	font-size: 4vw;
+}
+.const_1_cap, .const_2_cap, .const_3_cap, .const_4_cap, .const_5_cap, .const_6_cap{
+	font-size: max(1.1vw, 1.65vh);
+	padding: 1.5vh;
+}
+.consize_reccs{
+	grid-area: 15/2/15/5;
+	display: grid;
+	font-size: 2.4vw;
+
+	border-color: rgba(130, 222, 238, 0.3);
+	box-shadow: 0 0 18px rgba(87, 213, 245, 0.3);
+
+	border-radius:  7px 7px 7px 7px;
+	color: rgb(225, 241, 255);
+	text-shadow: 0 0 18px rgb(135, 166, 194);
+}
+
+.const_1{
+	grid-area: 3/2/3/2;
+}
+.const_2{
+	grid-area: 5/2/5/2;
+}
+.const_3{
+	grid-area: 7/2/7/2;
+}
+.const_4{
+	grid-area: 9/2/9/2;
+}
+.const_5{
+	grid-area: 11/2/11/2;
+}
+.const_6{
+	grid-area: 13/2/13/2;
+}
+.const_1_cap{
+	grid-area: 3/4/3/4;
+}
+.const_2_cap{
+	grid-area: 5/4/5/4;
+}
+.const_3_cap{
+	grid-area: 7/4/7/4;
+}
+.const_4_cap{
+	grid-area: 9/4/9/4;
+}
+.const_5_cap{
+	grid-area: 11/4/11/4;
+}
+.const_6_cap{
+	grid-area: 13/4/13/4;
+}
+
+
+/* ---------------------------------------- */
 
 
 
