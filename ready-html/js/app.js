@@ -10,3 +10,15 @@ new Swiper('.slider', {
 	//freeMode:true
 	
 })
+
+window.addEventListener('load', init);
+function init(){
+	
+	document.getElementsByClassName('night-theme-btn')[0].addEventListener('click', ()=>{
+		document.getElementById('day-theme').setAttribute('href', 'css/day-theme.css');
+	});
+	document.getElementsByClassName('day-theme-btn')[0].addEventListener('click', ()=>{
+		document.getElementById('day-theme').setAttribute('href', 'css/main.css');
+	});
+	
+}

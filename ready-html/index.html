@@ -1,45 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="day"> <!--<html lang="en" data-theme="day">-->
+<html lang="en" data-theme="night"> <!--<html lang="en" data-theme="day">-->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CharGuide</title>
 				<link rel="shortcut icon" type="image/png" href="img/cite-icon.png">
-
         <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+
+				
+
         <script src="libs/swiper/swiper-bundle.min.js" defer></script>
         <script src="libs/particles/particles.js" defer></script>
-
-        <link rel="stylesheet" href="css/main.css">
+				<link disabled rel="stylesheet" href="css/day-theme.css">
+        <link id="day-theme" rel="stylesheet" href="css/main.css">
+				
         <script src="js/app.js" defer></script>
     </head>
     <body>
 
+
+
+
+
         <div class="swiper slider">
+					
             <div class="swiper-wrapper slider__wrapper">
+							<button class="night-theme-btn">
+								<div class="night-theme-btn-icon night-theme-btn-icon-moon" style="background-image: url(/ready-html/img/icons/moon.png);"></div>
+							</button>
+							<button class="day-theme-btn">
+								<div class="day-theme-btn-icon day-theme-btn-icon-sun" style="background-image: url(/ready-html/img/icons/sun.png);"></div>
+							</button>
 
 <!-- ПЕРВЫЙ СЛАЙД -->
 							<div class="swiper-slide slider__item">
 
-								<div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(img/xiao-bg/back-layer.jpg);"></div>
+								<div class="slider__layer day" data-swiper-parallax="33%" style="background-image: url(img/day/1/base.jpg);"></div>
+								<div class="slider__layer day" data-swiper-parallax="24%" style="background-image: url(img/day/1/mid.png);"></div>
+								<div class="slider__layer day" data-swiper-parallax="18%" style="background-image: url(img/day/1/xiao.png);"></div>
+								<div class="slider__layer day" data-swiper-parallax="12%" style="background-image: url(img/day/1/front.png);"></div>
+
+
+								<div class="slider__layer night" data-swiper-parallax="35%" style="background-image: url(img/xiao-bg/back-layer.jpg);"></div>
+
+								<div class="slider__layer night" data-swiper-parallax="33%" style="background-image: url(img/xiao-bg/mid-layer.png);"></div>
 								<div class="main__title">
 									<div class="guide__name" data-swiper-parallax="10%" >Xiao</div>
 									<div class="xiao__status" data-swiper-parallax="15%" >Vigilant Yaksha</div>
 									<div class="guide" data-swiper-parallax="17%" >Guide</div>
 									<div class="site__name">CharGuide</div>
 								</div>
-								<div class="slider__layer" data-swiper-parallax="33%" style="background-image: url(img/xiao-bg/mid-layer.png);"></div>
 								<!-- частички -->
 								<canvas class="particles slider__layer" data-swiper-parallax="20%" data-color="#E1A95F"></canvas>
-								<div class="slider__layer" data-swiper-parallax="15%" style="background-image: url(img/xiao-bg/front-layer.png);"></div>
+								<div class="slider__layer night" data-swiper-parallax="15%" style="background-image: url(img/xiao-bg/front-layer.png);"></div>
 
 							</div>
 
 <!-- ВТОРОЙ СЛАЙД -->
 							<div class="swiper-slide slider__item">
 
-								<div class="slider__layer" style="background-image: url(img/screen-2/blurred.jpg);"></div>
+								<div class="slider__layer day" data-swiper-parallax="33%" style="background-image: url(img/day/2/base.jpg);"></div>
+								<div class="slider__layer day" data-swiper-parallax="20%" style="background-image: url(img/day/2/mid.png);"></div>
+								<div class="slider__layer day" data-swiper-parallax="13%" style="background-image: url(img/day/2/front.png);"></div>
+
+								<div class="slider__layer night" style="background-image: url(img/screen-2/blurred.jpg);"></div>
 								<div class="main_stats">
 									<div class="table"></div>
 									<div class="goblet" style="background-image: url(img/artifacts/goblet.png);" ></div>
@@ -65,9 +90,15 @@
 
 <!-- ТРЕТИЙ СЛАЙД -->
 								<div class="swiper-slide slider__item">
-									<div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(img/screen-3/back.jpg);"></div>
-									<div class="slider__layer" data-swiper-parallax="20%" style="background-image: url(img/screen-3/mid.png);"></div>
-									<div class="slider__layer" data-swiper-parallax="10%" style="background-image: url(img/screen-3/front.png);"></div>
+									<div class="slider__layer day" data-swiper-parallax="33%" style="background-image: url(img/day/3/base.jpg);"></div>
+									<div class="slider__layer day" data-swiper-parallax="27%" style="background-image: url(img/day/3/fourth.png);"></div>
+									<div class="slider__layer day" data-swiper-parallax="23%" style="background-image: url(img/day/3/third.png);"></div>
+									<div class="slider__layer day" data-swiper-parallax="18%" style="background-image: url(img/day/3/second.png);"></div>
+									<div class="slider__layer day" data-swiper-parallax="12%" style="background-image: url(img/day/3/front.png);"></div>
+
+									<div class="slider__layer night" data-swiper-parallax="35%" style="background-image: url(img/screen-3/back.jpg);"></div>
+									<div class="slider__layer night" data-swiper-parallax="20%" style="background-image: url(img/screen-3/mid.png);"></div>
+									<div class="slider__layer night" data-swiper-parallax="10%" style="background-image: url(img/screen-3/front.png);"></div>
 									
 
 									<div class="weapons">
@@ -285,15 +316,10 @@
 
 
 							</div>
-
-
-
-
-
-
-
-
         </div>
+
+
+
     </body>
 
 </html>
