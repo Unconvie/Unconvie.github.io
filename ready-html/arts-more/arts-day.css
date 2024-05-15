@@ -1,0 +1,106 @@
+@font-face{
+	font-family: raleway_f;
+	src:url(../fonts/raleway-regular.woff2);
+}
+@font-face{
+	font-family: raleway_f;
+	src:url(../fonts/raleway-black.woff2);
+	font-weight: 900;
+}
+.arts-back{
+	justify-self: flex-end;
+	color: var(--color1);
+	text-shadow: var(--text_shadow1);
+	grid-area: 1/2/1/2;
+	font-weight: 500;
+	font-size: 1.4vw;
+	will-change: transform;
+}
+a:link, a:visited{
+	color:var(--color2);
+  text-decoration: none;
+}
+a:hover{
+	color:rgb(9, 5, 61);
+	text-decoration: none;
+}
+a:active{
+	color:rgb(35, 28, 124);
+	text-decoration: none;
+}
+*{
+	margin:0;
+}
+:root{
+	--color1:rgb(66, 75, 156);
+	--text_shadow1: 0 0 18px rgb(92, 92, 189);
+	--color2:rgb(17, 12, 88);
+	--text_shadow2: 0 0 18px rgb(37, 31, 126);
+	--background: rgba(186, 204, 230, 0.5);
+
+	--viniet:inset 0 0 220px rgba(231, 224, 177, 0.3);
+
+	--border_color1: rgba(95, 147, 243, 0.3);
+	--box_shadow1: 0 0 18px rgba(70, 109, 182, 0.3);
+	--border_color2: rgba(184, 95, 243, 0.3);
+	--box_shadow2: 0 0 18px rgba(131, 67, 173, 0.3);
+	--talents_color: rgba(79, 138, 122, 0.4);
+}
+.bg{
+	height:100vh;
+	position:absolute;
+	background-size: cover;
+	background-position: center;
+	inset:0;
+}
+
+.more{
+	position: relative;
+	height:100vh;
+	display: grid;
+	grid-template-columns: 0.1fr 1fr 0.4fr 1fr 0.1fr;
+	grid-template-rows: 0.4fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+}
+.page{
+	grid-area: 1/2/1/2;
+	color: var(--color1);
+	text-shadow: var(--text-shadow1);
+	display: grid;
+	font-size: 3.9vw;
+	letter-spacing: 0.7vw;
+	position: relative;
+	justify-content:center;
+}
+.image{
+	grid-area: 2/4/6/4;
+}
+.img{
+	background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+	position: relative;
+	height: min(86.4vh, 57.9vw);
+	background-size: contain;
+}
+.advice1, .advice2, .advice3{
+	background-color: var(--background);
+	border-style: solid;
+	border-color:var(--border);
+	border-radius: 7px 7px 7px 7px;
+	color: var(--color1);
+	text-shadow: var(--text-shadow1);
+	display: grid;
+	font-size: max(1.1vw, 1.8vh);
+	letter-spacing: 0.2vw;
+	position: relative;
+	justify-content:center;
+}
+.advice1{
+	grid-area: 2/2/2/2;
+}
+.advice2{
+	grid-area: 4/2/4/2;
+}
+.advice3{
+	grid-area: 6/2/6/2;
+}

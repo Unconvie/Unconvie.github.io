@@ -250,7 +250,7 @@
 	overflow: visible;
 	will-change: transform;
 	transition: var(--transition) !important;
-	font-size: 5.2vw;
+	font-size: 5vw;
 	
 	color: var(--color2);
 	text-shadow: var(--text_shadow2);
@@ -259,6 +259,17 @@
 	grid-area: 1/1/1/4;
 	justify-self: center;
 	align-self: center;
+}
+.arts-info{
+	justify-self: center;
+	color: var(--color1);
+	text-shadow: var(--text_shadow1);
+	grid-area: 1/3/1/3;
+	font-weight: 500;
+	font-size: 1.2vw;
+	overflow: visible;
+	will-change: transform;
+	transition: var(--transition) !important;
 }
 .purple, .glad-anemo, .charge{
 	overflow:visible;
@@ -342,7 +353,7 @@
 	overflow:visible;
 	will-change: transform;
 	transition: var(--transition) !important;
-	font-size: 5.2vw;
+	font-size: 5vw;
 	
 	color: var(--color2);
 	text-shadow: var(--text_shadow2);
@@ -351,6 +362,17 @@
 	grid-area: 1/2/1/8;
 	justify-self: center;
 	align-self: center;
+}
+.weap-info{
+	justify-self: center;
+	color: var(--color1);
+	text-shadow: var(--text_shadow1);
+	grid-area: 1/7/1/9;
+	font-weight: 500;
+	font-size: 1.2vw;
+	overflow: visible;
+	will-change: transform;
+	transition: var(--transition) !important;
 }
 .weap_tier_1_cap, .weap_tier_2_cap{
 	overflow:visible;
@@ -496,7 +518,7 @@
 	overflow:visible;
 	will-change: transform;
 	transition: var(--transition) !important;
-	font-size: 5.2vw;
+	font-size: 5vw;
 	grid-area: 1/2/1/5;
 	
 	color: var(--color2);
@@ -505,6 +527,17 @@
 	letter-spacing: 0.5vw;
 	justify-self: center;
 	align-self: center;
+}
+.talents-info{
+	margin-left: 2vw;
+	color: var(--color1);
+	text-shadow: var(--text_shadow1);
+	grid-area: 1/4/1/4;
+	font-weight: 500;
+	font-size: 1.2vw;
+	overflow: visible;
+	will-change: transform;
+	transition: var(--transition) !important;
 }
 .const_type_1{
 	grid-area: 2/2/2/5;
@@ -517,8 +550,8 @@
 	will-change: transform;
 	transition: var(--transition) !important;
 
-	color: var(--color1);
-	text-shadow: var(--text_shadow1);
+	color: var(--color2);
+	text-shadow: var(--text_shadow2);
 	font-weight: 600;
 	letter-spacing: 0.5vw;
 	justify-self: center;
@@ -670,6 +703,17 @@
 	justify-self: center;
 	align-self: center;
 }
+.const-info{
+	justify-self: center;
+	color: var(--color1);
+	text-shadow: var(--text_shadow1);
+	grid-area: 1/5/1/5;
+	font-weight: 500;
+	font-size: 1.2vw;
+	overflow: visible;
+	will-change: transform;
+	transition: var(--transition) !important;
+}
 .reccs_title{
 	grid-area: 6/3/6/6;
 	font-size: 3.5vw;
@@ -794,6 +838,17 @@
 	letter-spacing: 0.5vw;
 	justify-self: center;
 	align-self: center;
+}
+.teams-info{
+	justify-self: flex-end;
+	color: var(--color1);
+	text-shadow: var(--text_shadow1);
+	grid-area: 1/3/1/3;
+	font-weight: 500;
+	font-size: 1.2vw;
+	overflow: visible;
+	will-change: transform;
+	transition: var(--transition) !important;
 }
 .t_1_text{
 	color: var(--color1);

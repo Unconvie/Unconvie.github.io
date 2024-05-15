@@ -26,6 +26,17 @@
         <div class="swiper slider">
 					
             <div class="swiper-wrapper slider__wrapper">
+							<!-- <select id="selector">
+								<option><a href="#FIRST">Artifacts</a></option>
+								<option><a href="#SECOND">Weapons</a></option>
+								<option><a href="#THIRD">Talents</a></option>
+								<option><a href="#FOURTH">Constellations</a></option>
+								<option><a href="#FIFTH">Teams</a></option>
+							</select> -->
+
+
+
+
 							<button class="night-theme-btn">
 								<div class="night-theme-btn-icon night-theme-btn-icon-moon" style="background-image: url(/ready-html/img/icons/moon.png);"></div>
 							</button>
@@ -34,7 +45,7 @@
 							</button>
 
 <!-- ПЕРВЫЙ СЛАЙД -->
-							<div class="swiper-slide slider__item">
+							<div class="swiper-slide slider__item" id="FIRST">
 
 								<div class="slider__layer day" data-swiper-parallax="33%" style="background-image: url(img/day/1/base.jpg);"></div>
 								<div class="slider__layer day" data-swiper-parallax="24%" style="background-image: url(img/day/1/mid.png);"></div>
@@ -58,7 +69,7 @@
 							</div>
 
 <!-- ВТОРОЙ СЛАЙД -->
-							<div class="swiper-slide slider__item">
+							<div class="swiper-slide slider__item" id="SECOND">
 
 								<div class="slider__layer day" data-swiper-parallax="33%" style="background-image: url(img/day/2/base.jpg);"></div>
 								<div class="slider__layer day" data-swiper-parallax="20%" style="background-image: url(img/day/2/mid.png);"></div>
@@ -76,6 +87,7 @@
 								</div>
 
 								<div class="arts">
+									<div class="arts-info" data-swiper-parallax="15%"><a href="arts-more/arts-more.html">More</a></div>
 									<div class="arts-slide-caption" data-swiper-parallax="15%">Artifacts</div>
 									<div class="art purple" data-swiper-parallax="20%" style="background-image: url(img/artifacts/purple.png);">1</div>
 									<div class="purple_discription" data-swiper-parallax="15%">&#9826;4p Vermillion Hereafter&#9826;<br><br>ATK +18%<br>ATK +10% When HP Decreases, When Elemental Burst Is Used ATK +8%(Stacks Up To 4 Times)</div>
@@ -89,7 +101,7 @@
 
 
 <!-- ТРЕТИЙ СЛАЙД -->
-								<div class="swiper-slide slider__item">
+								<div class="swiper-slide slider__item" id="THIRD">
 									<div class="slider__layer day" data-swiper-parallax="33%" style="background-image: url(img/day/3/base.jpg);"></div>
 									<div class="slider__layer day" data-swiper-parallax="27%" style="background-image: url(img/day/3/fourth.png);"></div>
 									<div class="slider__layer day" data-swiper-parallax="23%" style="background-image: url(img/day/3/third.png);"></div>
@@ -106,6 +118,7 @@
 										<div class="tier_2">Tier 2</div>
 										<div class="tier_3">Tier 3</div>
 										<div class="weap-slide-caption" data-swiper-parallax="15%">Weapons</div>
+										<div class="weap-info" data-swiper-parallax="15%">More</div>
 										<div class="weap_tier_1">
 											<div class="slider__layer Jade" style="background-image: url(img/weapon/Primordial_Jade_Winged-Spear.png);"></div>
 											<div class="slider__layer Homa" style="background-image: url(img/weapon/Staff_of_Homa.png);"></div>
@@ -146,7 +159,7 @@
 								</div>
 
 <!-- ЧЕТВЕРТЫЙ СЛАЙД -->
-							<div class="swiper-slide slider__item">
+							<div class="swiper-slide slider__item" id="FOURTH">
 								<div class="slider__layer day" data-swiper-parallax="33%" style="background-image: url(img/day/4/base.jpg);"></div>
 								<div class="slider__layer day" data-swiper-parallax="27%" style="background-image: url(img/day/4/fifth.png);"></div>
 								<div class="slider__layer day" data-swiper-parallax="23%" style="background-image: url(img/day/4/fourth.png);"></div>
@@ -160,6 +173,7 @@
 
 								<div class="Talents">
 									<div class="talent-slide-caption" data-swiper-parallax="15%">Talents</div>
+									<div class="talents-info" data-swiper-parallax="15%">More</div>
 									<div class="const_type_1" data-swiper-parallax="20%">C0-C5</div>
 									<div class="const_type_2" data-swiper-parallax="20%">C6</div>
 									<div class="C0"></div>
@@ -190,7 +204,7 @@
 							</div>
 
 <!-- ПЯТЫЙ СЛАЙД -->
-							<div class="swiper-slide slider__item">
+							<div class="swiper-slide slider__item" id="FIFTH">
 								<div class="slider__layer day" data-swiper-parallax="33%" style="background-image: url(img/day/5/base.jpg);"></div>
 								<div class="slider__layer day" data-swiper-parallax="20%" style="background-image: url(img/day/5/mid.png);"></div>
 								<div class="slider__layer day" data-swiper-parallax="13%" style="background-image: url(img/day/5/front.png);"></div>
@@ -201,6 +215,7 @@
 
 								<div class="constellations">
 									<div class="constellations-slide-caption" data-swiper-parallax="15%">Constellations</div>
+									<div class="const-info" data-swiper-parallax="15%">More</div>
 									<div class="const_1">C1</div>
 									<div class="const_2">C2</div>
 									<div class="const_3">C3</div>
@@ -235,7 +250,7 @@
 							</div>
 
 <!-- ШЕСТОЙ СЛАЙД -->
-							<div class="swiper-slide slider__item">
+							<div class="swiper-slide slider__item" id="SIXTH">
 								<div class="slider__layer day" data-swiper-parallax="33%" style="background-image: url(img/day/6/base.jpg);"></div>
 								<div class="slider__layer day" data-swiper-parallax="23%" style="background-image: url(img/day/6/fourth.png);"></div>
 								<div class="slider__layer day" data-swiper-parallax="18%" style="background-image: url(img/day/6/third.png);"></div>
@@ -250,6 +265,7 @@
 
 								<div class="teams">
 									<div class="teams-slide-caption" data-swiper-parallax="15%">Teams</div>
+									<div class="teams-info" data-swiper-parallax="15%">More</div>
 									<div class="t-1_s-1" style="background-image: url(img/screen-7/Xiao_Icon.png);"></div>
 									<div class="t-1_s-2" style="background-image: url(img/screen-7/battery.png);"></div>
 									<div class="t-1_s-3" style="background-image: url(img/screen-7/Untitled.png);"></div>
