@@ -7,7 +7,7 @@
 	src:url(../fonts/raleway-black.woff2);
 	font-weight: 900;
 }
-.arts-back{
+.team-back{
 	justify-self: flex-start;
 	color: var(--color1);
 	text-shadow: var(--text_shadow1);
@@ -102,5 +102,5 @@ a:active{
 	grid-area: 4/2/4/2;
 }
 .advice3{
-	grid-area: 6/2/6/2;
+	grid-area: 2/4/2/4;
 }

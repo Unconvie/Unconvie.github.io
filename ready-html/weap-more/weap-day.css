@@ -7,7 +7,7 @@
 	src:url(../fonts/raleway-black.woff2);
 	font-weight: 900;
 }
-.arts-back{
+.weap-back{
 	justify-self: flex-start;
 	color: var(--color1);
 	text-shadow: var(--text_shadow1);

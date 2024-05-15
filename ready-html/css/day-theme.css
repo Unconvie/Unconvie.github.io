@@ -65,7 +65,30 @@
 }
 /* #endregion */
 
+a:link, a:visited{
+	color:var(--color2);
+  text-decoration: none;
+}
+a:hover{
+	color:var(--color1);
+	text-decoration: none;
+}
+a:active{
+	color:rgb(35, 28, 124);
+	text-decoration: none;
+}
 
+.quick-guide{
+	grid-area: 1/10/1/10;
+	justify-self: flex-end;
+	color: var(--color1);
+	text-shadow: var(--text_shadow1);
+	font-weight: 500;
+	font-size: 1.2vw;
+	overflow: visible;
+	will-change: transform;
+	transition: var(--transition) !important;
+}
 
 
 

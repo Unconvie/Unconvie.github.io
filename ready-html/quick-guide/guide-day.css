@@ -1,0 +1,289 @@
+
+.guide-back{
+	justify-self: flex-start;
+	color: var(--color1);
+	text-shadow: var(--text_shadow1);
+	grid-area: 1/2/1/2;
+	font-weight: 500;
+	font-size: 1.4vw;
+	will-change: transform;
+}
+a:link, a:visited{
+	color:var(--color2);
+  text-decoration: none;
+}
+a:hover{
+	color:rgb(9, 5, 61);
+	text-decoration: none;
+}
+a:active{
+	color:rgb(35, 28, 124);
+	text-decoration: none;
+}
+*{
+	margin:0;
+}
+:root{
+	--color1:rgb(66, 75, 156);
+	--text_shadow1: 0 0 18px rgb(92, 92, 189);
+	--color2:rgb(17, 12, 88);
+	--text_shadow2: 0 0 18px rgb(37, 31, 126);
+	--background: rgba(186, 204, 230, 0.5);
+
+	--viniet:inset 0 0 220px rgba(231, 224, 177, 0.3);
+
+	--border_color1: rgba(95, 147, 243, 0.3);
+	--box_shadow1: 0 0 18px rgba(70, 109, 182, 0.3);
+	--border_color2: rgba(184, 95, 243, 0.3);
+	--box_shadow2: 0 0 18px rgba(131, 67, 173, 0.3);
+	--talents_color: rgba(79, 138, 122, 0.4);
+}
+.bg{
+	height:100vh;
+	position:absolute;
+	background-size: cover;
+	background-position: center;
+	inset:0;
+}
+
+.table{
+	position: relative;
+	height:100vh;
+	display: grid;
+	grid-template-columns: 0.1fr 1.5fr 0.02fr 1.7fr 0.02fr 1.2fr 0.1fr;
+	grid-template-rows: 0.4fr 1.5fr 0.7fr 2fr 0.05fr 1.5fr 0.3fr;
+}
+.article, .weapons, .talents, .artifacts, .mats, .stats, .teams{
+	background-color: var(--background);
+	border-style: solid;
+	border-color:var(--border);
+	border-radius: 7px 7px 7px 7px;
+	color: var(--color1);
+	text-shadow: var(--text-shadow1);
+	display: grid;
+	font-size: max(1.1vw, 1.8vh);
+	letter-spacing: 0.2vw;
+	position: relative;
+	justify-content:center;
+}
+.article_title, .weapons_title, .talents_title, .artifacts_title, .mats_title, .teams_title{
+	color: var(--color1);
+	text-shadow: var(--text-shadow1);
+	display: grid;
+	font-size: max(1.1vw, 1.8vh);
+	letter-spacing: 0.2vw;
+	position: relative;
+	justify-self:center;
+	align-self: flex-end;
+}
+.row{
+	position: relative;
+	display: grid;
+	grid-area: 1/1/8/8;
+	grid-template-columns: 0.1fr 1fr 0.02fr 1.7fr 0.02fr 1.4fr 0.1fr;
+	grid-template-rows: 0.4fr 0.3fr 0.9fr 0.2fr 1.5fr 0.05fr 1.5fr 0.3fr;
+}
+.article{
+	grid-area: 3/2/5/2;
+}
+.article_title{
+	grid-area: 1/2/3/2;
+}
+.weapons{
+	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-area: 2/4/5/4;
+}
+.w1{
+	grid-area: 2/2/2/2;
+}
+.w2{
+	grid-area: 2/4/2/4;
+}
+.w3{
+	grid-area: 2/6/2/6;
+}
+.w4{
+	grid-area: 2/8/2/8;
+}
+.w5{
+	grid-area: 4/2/4/2;
+}
+.w6{
+	grid-area: 4/4/4/4;
+}
+.w7{
+	grid-area: 4/6/4/6;
+}
+.w8{
+	grid-area: 4/8/4/8;
+}
+
+.weapons_title{
+	grid-area: 1/4/1/4;
+}
+.talents{
+	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-area: 2/6/5/6;
+}
+.c1{
+	grid-area: 2/2/2/2;
+}
+.c2{
+	grid-area: 4/2/4/2;
+}
+.t1{
+	grid-area: 2/4/2/4;
+}
+.t2{
+	grid-area: 2/6/2/6;
+}
+.t3{
+	grid-area: 2/8/2/8;
+}
+.t4{
+	grid-area: 4/4/4/4;
+}
+.t5{
+	grid-area: 4/6/4/6;
+}
+.t6{
+	grid-area: 4/8/4/8;
+}
+
+
+
+
+.talents_title{
+	grid-area: 1/6/1/6;
+}
+.mats{
+	grid-area: 4/4/7/4;
+}
+.mats_title{
+	grid-area: 3/4/3/4;
+}
+.teams{
+	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-area: 4/6/7/6;
+}
+.p1{
+	grid-area: 2/2/2/2;
+}
+.p2{
+	grid-area: 2/4/2/4;
+}
+.p3{
+	grid-area: 2/6/2/6;
+}
+.p4{
+	grid-area: 4/2/4/2;
+}
+.p5{
+	grid-area: 4/4/4/4;
+}
+.p6{
+	grid-area: 4/6/4/6;
+}
+.p7{
+	grid-area: 6/2/6/2;
+}
+.p8{
+	grid-area: 6/4/6/4;
+}
+.p9{
+	grid-area: 6/6/6/6;
+}
+.p10{
+	grid-area: 8/2/8/2;
+}
+.p11{
+	grid-area: 8/4/8/4;
+}
+.p12{
+	grid-area: 8/6/8/6;
+}
+.p13{
+	grid-area: 10/2/10/2;
+}
+.p14{
+	grid-area: 10/4/10/4;
+}
+.p15{
+	grid-area: 10/6/10/6;
+}
+
+
+
+
+
+.teams_title{
+	grid-area: 3/6/3/6;
+}
+.stats{
+	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-area: 4/2/4/2;
+}
+.sands{
+	grid-area: 2/2/2/2;
+}
+.goblet{
+	grid-area: 2/4/2/4;
+}
+.circlet{
+	grid-area: 2/6/2/6;
+}
+.sands_cap{
+	grid-area: 4/2/4/2;
+}
+.goblet_cap{
+	grid-area: 4/4/4/4;
+}
+.circlet_cap{
+	grid-area: 4/6/4/6;
+}
+.ER{
+	grid-area: 6/2/6/7;
+}
+
+
+
+.artifacts{
+	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-rows: 0.1fr 1fr 0.1fr;
+	grid-area: 6/2/6/2;
+}
+.artifacts_title{
+	grid-area: 3/2/3/2;
+}
+.top1{
+	grid-area: 2/2/2/2;
+}
+.top2{
+	grid-area: 2/4/2/4;
+}
+.top3{
+	grid-area: 2/6/2/6;
+}
+
+
+
+
+
+
+.advice1, .advice2, .advice3{
+	background-color: var(--background);
+	border-style: solid;
+	border-color:var(--border);
+	border-radius: 7px 7px 7px 7px;
+	color: var(--color1);
+	text-shadow: var(--text-shadow1);
+	display: grid;
+	font-size: max(1.1vw, 1.8vh);
+	letter-spacing: 0.2vw;
+	position: relative;
+	justify-content:center;
+}

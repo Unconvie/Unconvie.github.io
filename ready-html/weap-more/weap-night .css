@@ -7,8 +7,8 @@
 	src:url(../fonts/raleway-black.woff2);
 	font-weight: 900;
 }
-.arts-back{
-	justify-self: flex-start;
+.weap-back{
+	justify-self: flex-end;
 	color: var(--color1);
 	text-shadow: var(--text_shadow1);
 	grid-area: 1/2/1/2;
@@ -17,25 +17,26 @@
 	will-change: transform;
 }
 a:link, a:visited{
-	color:var(--color2);
+	color:var(--color1);
   text-decoration: none;
 }
 a:hover{
-	color:rgb(9, 5, 61);
+	color:rgb(211, 193, 134);
 	text-decoration: none;
 }
 a:active{
-	color:rgb(35, 28, 124);
+	color:rgb(255, 243, 203);
 	text-decoration: none;
 }
 *{
 	margin:0;
 }
 :root{
-	--color1:rgb(66, 75, 156);
-	--text_shadow1: 0 0 18px rgb(92, 92, 189);
-	--color2:rgb(17, 12, 88);
-	--text_shadow2: 0 0 18px rgb(37, 31, 126);
+
+	--color1:rgb(248, 232, 181);
+	--text_shadow1: 0 0 18px rgb(189, 162, 82);
+	--color2:rgb(225, 241, 255);
+	--text_shadow2: 0 0 18px rgb(135, 166, 194);
 	--background: rgba(186, 204, 230, 0.5);
 
 	--viniet:inset 0 0 220px rgba(231, 224, 177, 0.3);

@@ -57,7 +57,30 @@
   100% { opacity: 1; }
 }
 
+a:link, a:visited{
+	color:var(--color1);
+  text-decoration: none;
+}
+a:hover{
+	color:rgb(211, 193, 134);
+	text-decoration: none;
+}
+a:active{
+	color:rgb(255, 243, 203);
+	text-decoration: none;
+}
 
+.quick-guide{
+	grid-area: 1/10/1/10;
+	justify-self: flex-end;
+	color: var(--color1);
+	text-shadow: var(--text_shadow1);
+	font-weight: 500;
+	font-size: 1.2vw;
+	overflow: visible;
+	will-change: transform;
+	transition: var(--transition) !important;
+}
 
 
 :root{
@@ -676,17 +699,7 @@
 	justify-self: center;
 	align-self: center;
 }
-.const-info{
-	justify-self: center;
-	color: var(--color1);
-	text-shadow: var(--text_shadow1);
-	grid-area: 1/5/1/5;
-	font-weight: 500;
-	font-size: 1.2vw;
-	overflow: visible;
-	will-change: transform;
-	transition: var(--transition) !important;
-}
+
 .reccs_title{
 	grid-area: 6/3/6/6;
 	font-size: 3.5vw;
