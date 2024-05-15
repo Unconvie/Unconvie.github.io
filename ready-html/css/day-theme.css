@@ -72,17 +72,17 @@
 :root{
 	transition: background-color 0.4s, color 0.4s;
 	/* --transition: 2s cubic-bezier(.2, .6, 0, 1); */
-	--transition: 1.5s cubic-bezier(.54,.29,.23,1);
+	--transition: 1.8s cubic-bezier(.54,.29,.23,1);
 	/* настройка перелистывания */
 
 	--index: calc(1vw + 1vh);
-	--color1:rgb(61, 61, 109);
-	--text_shadow1: 0 0 18px rgb(55, 55, 85);
-	--color2:rgb(78, 61, 39);
-	--text_shadow2: 0 0 18px rgb(77, 58, 33);
+	--color1:rgb(66, 75, 156);
+	--text_shadow1: 0 0 18px rgb(92, 92, 189);
+	--color2:rgb(17, 12, 88);
+	--text_shadow2: 0 0 18px rgb(37, 31, 126);
 	--background: rgba(224, 237, 255, 0.5);
 
-	--viniet:inset 0 0 220px rgba(231, 226, 199, 0.3);
+	--viniet:inset 0 0 220px rgba(231, 224, 177, 0.3);
 
 	--border_color1: rgba(95, 147, 243, 0.3);
 	--box_shadow1: 0 0 18px rgba(70, 109, 182, 0.3);
@@ -340,7 +340,6 @@
 }
 .weap-slide-caption{
 	overflow:visible;
-	overflow: hidden !important;
 	will-change: transform;
 	transition: var(--transition) !important;
 	font-size: 5.2vw;
@@ -659,7 +658,7 @@
 }
 .constellations-slide-caption, .reccs_title{
 	grid-area: 1/2/1/6;
-	overflow:hidden;
+	overflow:visible;
 	will-change: transform;
 	transition: var(--transition) !important;
 	font-size: 4.2vw;

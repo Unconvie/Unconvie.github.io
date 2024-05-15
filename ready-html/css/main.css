@@ -67,7 +67,7 @@
 
 :root{
 	/* --transition: 2s cubic-bezier(.2, .6, 0, 1); */
-	--transition: 1.5s cubic-bezier(.54,.29,.23,1);
+	--transition: 1.8s cubic-bezier(.54,.29,.23,1);
 	/* настройка перелистывания */
 
 	--viniet:inset 0 0 220px rgb(0, 0, 0, 0.3);
@@ -317,7 +317,6 @@
 }
 .weap-slide-caption{
 	overflow:visible;
-	overflow: hidden !important;
 	will-change: transform;
 	transition: var(--transition) !important;
 	font-size: 5.2vw;
@@ -635,7 +634,7 @@
 }
 .constellations-slide-caption, .reccs_title{
 	grid-area: 1/2/1/6;
-	overflow:hidden;
+	overflow:visible;
 	will-change: transform;
 	transition: var(--transition) !important;
 	font-size: 4.2vw;
@@ -1050,6 +1049,7 @@ html, body{
 	inset:0;
 	z-index: 1;
 	box-shadow: var(--viniet);
+
 	/* виньетирование */
 }
 .slider__item{
