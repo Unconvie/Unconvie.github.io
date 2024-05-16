@@ -1,14 +1,20 @@
-@font-face{
-	font-family: raleway_f;
-	src:url(../fonts/raleway-regular.woff2);
+:root{
+
+	--color1:rgb(248, 232, 181);
+	--text_shadow1: 0 0 18px rgb(189, 162, 82);
+	--color2:rgb(225, 241, 255);
+	--text_shadow2: 0 0 18px rgb(135, 166, 194);
+	--background: rgba(63, 87, 121, 0.5);
+
+	--viniet:inset 0 0 220px rgba(231, 224, 177, 0.3);
+
+	--border_color1: rgba(95, 147, 243, 0.3);
+	--box_shadow1: 0 0 18px rgba(70, 109, 182, 0.3);
+	--border_color2: rgba(184, 95, 243, 0.3);
+	--box_shadow2: 0 0 18px rgba(131, 67, 173, 0.3);
+	--talents_color: rgba(79, 138, 122, 0.4);
 }
-@font-face{
-	font-family: raleway_f;
-	src:url(../fonts/raleway-black.woff2);
-	font-weight: 900;
-}
-.arts-back{
-	justify-self: flex-end;
+.guide-back{
 	color: var(--color1);
 	text-shadow: var(--text_shadow1);
 	grid-area: 1/2/1/2;
@@ -31,22 +37,10 @@ a:active{
 *{
 	margin:0;
 }
-:root{
-
-	--color1:rgb(248, 232, 181);
-	--text_shadow1: 0 0 18px rgb(189, 162, 82);
-	--color2:rgb(225, 241, 255);
-	--text_shadow2: 0 0 18px rgb(135, 166, 194);
-	--background: rgba(186, 204, 230, 0.5);
-
-	--viniet:inset 0 0 220px rgba(231, 224, 177, 0.3);
-
-	--border_color1: rgba(95, 147, 243, 0.3);
-	--box_shadow1: 0 0 18px rgba(70, 109, 182, 0.3);
-	--border_color2: rgba(184, 95, 243, 0.3);
-	--box_shadow2: 0 0 18px rgba(131, 67, 173, 0.3);
-	--talents_color: rgba(79, 138, 122, 0.4);
+.day{
+	display: none;
 }
+
 .bg{
 	height:100vh;
 	position:absolute;
@@ -55,34 +49,505 @@ a:active{
 	inset:0;
 }
 
-.more{
+.table{
 	position: relative;
 	height:100vh;
 	display: grid;
-	grid-template-columns: 0.1fr 1fr 0.4fr 1fr 0.1fr;
-	grid-template-rows: 0.4fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-columns: 0.1fr 1.5fr 0.02fr 1.7fr 0.02fr 1.2fr 0.1fr;
+	grid-template-rows: 0.4fr 1.5fr 0.7fr 2fr 0.02fr 1.5fr 0.1fr;
 }
-.page{
-	grid-area: 1/2/1/2;
+.article, .weapons, .talents, .artifacts, .mats, .stats, .teams{
+	background-color: var(--background);
+	border-style: solid;
+	border-color:var(--border);
+	border-radius: 7px 7px 7px 7px;
 	color: var(--color1);
 	text-shadow: var(--text-shadow1);
 	display: grid;
-	font-size: 3.9vw;
-	letter-spacing: 0.7vw;
+	font-size: max(1.1vw, 1.8vh);
+	letter-spacing: 0.2vw;
 	position: relative;
 	justify-content:center;
 }
-.image{
-	grid-area: 2/4/6/4;
-}
-.img{
-	background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+.article_title, .weapons_title, .talents_title, .artifacts_title, .mats_title, .teams_title{
+	color: var(--color1);
+	text-shadow: var(--text-shadow1);
+	display: grid;
+	font-size: max(1.1vw, 1.8vh);
+	letter-spacing: 0.2vw;
 	position: relative;
-	height: min(86.4vh, 57.9vw);
-	background-size: contain;
+	justify-self:center;
+	align-self: flex-end;
 }
+.row{
+	position: relative;
+	display: grid;
+	grid-area: 1/1/8/8;
+	grid-template-columns: 0.1fr 0.7fr 0.02fr 1.2fr 0.02fr 1.4fr 0.1fr;
+	grid-template-rows: 0.4fr 0.3fr 0.9fr 0.2fr 1.5fr 0.05fr 1.5fr 0.3fr;
+}
+
+
+.article{
+	box-shadow: 0 0 200px rgba(238, 222, 81, 0.342);
+	
+	background-image: url("../img/day/5/base.jpg");
+	background-size: cover;
+	height: 96%;
+	width: 100%;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	grid-area: 3/2/5/2;
+}
+.xiao_art{
+	position: absolute;
+	justify-self: flex-end;
+	background-size: min(120%, 27vh);
+	/* height: 20.6vh; */
+	height: 100%;
+	background-size: cover;
+	width: 15vw;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.article_title{
+	font-size: max(3vw, 3vh);
+	grid-area: 1/2/3/2;
+}
+/* #region weapons */
+.weapons{
+	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-area: 2/4/5/4;
+}
+.w1, .w2, .w3, .w4{
+	box-shadow: 0 0 5px rgb(224, 219, 188);
+	background-color: rgb(221, 180, 90);
+	border-color: rgba(241, 241, 231, 0.5);
+}
+.w5, .w6, .w7, .w8{
+	background-color: rgb(176, 127, 204);
+	box-shadow: 0 0 5px rgb(213, 147, 252);
+	border-color: rgba(233, 183, 245, 0.5);
+}
+.w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8{
+	justify-self: center;
+	/* background-size: max(100%, 8vw); <750 */
+	background-size: min(80%, 15vh);
+	height: 10.5vh;
+	width: 5.2vw;
+	background-position: top;
+	background-repeat: no-repeat;
+	border-radius: 7px 7px 7px 7px;
+	border-style: solid;
+}
+.w1{
+	grid-area: 2/2/2/2;
+}
+.w2{
+	grid-area: 2/4/2/4;
+}
+.w3{
+	grid-area: 2/6/2/6;
+}
+.w4{
+	grid-area: 2/8/2/8;
+}
+.w5{
+	grid-area: 4/2/4/2;
+}
+.w6{
+	grid-area: 4/4/4/4;
+}
+.w7{
+	grid-area: 4/6/4/6;
+}
+.w8{
+	grid-area: 4/8/4/8;
+}
+.weapons_title{
+	font-size: max(2vw, 2vh);
+	grid-area: 1/4/1/4;
+}
+/* #endregion */
+
+/* #region talents */
+.talents{
+	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-area: 2/6/5/6;
+}
+.c1, .c2{
+	align-self: center;
+	justify-self: center;
+	font-size: max(2.5vw, 2.5vh);
+}
+.t1, .t2, .t3, .t4, .t5, .t6{
+	background-size: contain;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.c1{
+	grid-area: 2/2/2/2;
+}
+.c2{
+	grid-area: 4/2/4/2;
+}
+.t1{
+	grid-area: 2/4/2/4;
+}
+.t2{
+	grid-area: 2/6/2/6;
+}
+.t3{
+	grid-area: 2/8/2/8;
+}
+.t4{
+	grid-area: 4/4/4/4;
+}
+.t5{
+	grid-area: 4/6/4/6;
+}
+.t6{
+	grid-area: 4/8/4/8;
+}
+.talents_title{
+	font-size: max(2vw, 2vh);
+	grid-area: 1/6/1/6;
+}
+/* #endregion */
+
+
+/* #region materials */
+.mats{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 4fr;
+	grid-area: 4/4/7/4;
+}
+
+.mat1, .mat2, .mat3, .mat4, .mat5, .mat6, .mat7, .mat8, .mat9, .mat10, .mat11, .mat12, .mat13, .mat14, .mat15, .mat16, .mat17,
+.mora1, .mora2, .chunk_1_cap, .chunk_2_cap, .chunk_3_cap, .chunk_4_cap, .boss_cap, .mob_11_cap,
+.mob_12_cap, .mob_13_cap, .flower_cap, .book_1_cap, .book_2_cap, .book_3_cap, .week_cap,
+.mob_21_cap, .mob_22_cap, .mob_23_cap, .crown_cap, .first, .second{
+	font-size: max(1vw, 1.7vh);
+	justify-self: center;
+	align-self: center;
+}
+.first, .second, .mora1, .mora2{
+	background-color:rgba(0, 0, 0, 0.1);
+	border-style: solid;
+	border-radius: 0px 9px 0px 9px;
+	border-width: 1px;
+	border-color: var(--color2);
+}
+.mora1, .mora2{
+	color: var(--color2);
+}
+
+
+.mat1, .mat2, .mat3, .mat4, .mat5, .mat6, .mat7, .mat8, .mat9, .mat10, .mat11, .mat12, .mat13, .mat14, .mat15, .mat16, .mat17{
+	background-size: contain;
+	height: 7vh;
+	width: 7.5vw;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+/* #region up */
+.up{
+	display: grid;
+	grid-area: 1/1/1/1;
+	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-rows: 0.4fr 1fr 0.4fr;
+}
+.first{
+	grid-area: 1/2/1/11;
+}
+.mat1{
+	grid-area: 2/2/2/2;
+}
+.chunk_1_cap{
+	grid-area: 3/2/3/2;
+}
+.mat2{
+	grid-area: 2/4/2/4;
+}
+.chunk_2_cap{
+	grid-area: 3/4/3/4;
+}
+.mat3{
+	grid-area: 2/6/2/6;
+}
+.chunk_3_cap{
+	grid-area: 3/6/3/6;
+}
+.mat4{
+	grid-area: 2/8/2/8;
+}
+.chunk_4_cap{
+	grid-area: 3/8/3/8;
+}
+.mat5{
+	grid-area: 2/10/2/10;
+}
+.boss_cap{
+	grid-area: 3/10/3/10;
+}
+/* #endregion */
+
+
+/* #region down */
+.down{
+	display: grid;
+	grid-area: 2/1/2/1;
+	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-rows: 1fr 0.4fr 0.4fr 0.4fr 1fr 0.4fr 1fr 0.4fr 0.4fr;
+}
+.mat6{
+	grid-area: 1/2/1/2;
+}
+.mob_11_cap{
+	grid-area: 2/2/2/2;
+}
+.mat7{
+	grid-area: 1/4/1/4;
+}
+.mob_12_cap{
+	grid-area: 2/4/2/4;
+}
+.mat8{
+	grid-area: 1/6/1/6;
+}
+.mob_13_cap{
+	grid-area: 2/6/2/6;
+}
+.mat9{
+	grid-area: 1/8/1/8;
+}
+.flower_cap{
+	grid-area: 2/8/2/8;
+}
+.mora1{
+	grid-area: 3/4/3/7;
+}
+.second{
+	grid-area: 4/4/4/7;
+}
+.mat10{
+	grid-area: 5/2/5/2;
+}
+.book_1_cap{
+	grid-area: 6/2/6/2;
+}
+.mat11{
+	grid-area: 5/4/5/4;
+}
+.book_2_cap{
+	grid-area: 6/4/6/4;
+}
+.mat12{
+	grid-area: 5/6/5/6;
+}
+.book_3_cap{
+	grid-area: 6/6/6/6;
+}
+.mat13{
+	grid-area: 5/8/5/8;
+}
+.week_cap{
+	grid-area: 6/8/6/8;
+}
+.mat14{
+	grid-area: 7/2/7/2;
+}
+.mob_21_cap{
+	grid-area: 8/2/8/2;
+}
+.mat15{
+	grid-area: 7/4/7/4;
+}
+.mob_22_cap{
+	grid-area: 8/4/8/4;
+}
+.mat16{
+	grid-area: 7/6/7/6;
+}
+.mob_23_cap{
+	grid-area: 8/6/8/6;
+}
+.mat17{
+	grid-area: 7/8/7/8;
+}
+.crown_cap{
+	grid-area: 8/8/8/8;
+}
+.mora2{
+	grid-area: 9/4/9/7;
+}
+/* #endregion */
+
+
+.mats_title{
+	font-size: max(2vw, 2vh);
+	grid-area: 3/4/3/4;
+}
+
+/* #endregion */
+
+/* #region teams */
+.teams{
+	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-area: 4/6/7/6;
+}
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12, .p13, .p14, .p15{
+	position: absolute;
+	background-size: contain;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.p1{
+	grid-area: 2/2/2/2;
+}
+.p2{
+	grid-area: 2/4/2/4;
+}
+.p3{
+	grid-area: 2/6/2/6;
+}
+.p4{
+	grid-area: 4/2/4/2;
+}
+.p5{
+	grid-area: 4/4/4/4;
+}
+.p6{
+	grid-area: 4/6/4/6;
+}
+.p7{
+	grid-area: 6/2/6/2;
+}
+.p8{
+	grid-area: 6/4/6/4;
+}
+.p9{
+	grid-area: 6/6/6/6;
+}
+.p10{
+	grid-area: 8/2/8/2;
+}
+.p11{
+	grid-area: 8/4/8/4;
+}
+.p12{
+	grid-area: 8/6/8/6;
+}
+.p13{
+	grid-area: 10/2/10/2;
+}
+.p14{
+	grid-area: 10/4/10/4;
+}
+.p15{
+	grid-area: 10/6/10/6;
+}
+.teams_title{
+	font-size: max(2vw, 2vh);
+	grid-area: 3/6/3/6;
+}
+/* #endregion */
+
+/* #region stats */
+.stats{
+	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 0.5fr 0.1fr;
+	grid-area: 4/2/4/2;
+}
+.sands, .goblet, .circlet{
+	position: absolute;
+	background-size: contain;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.sands{
+	grid-area: 2/2/2/2;
+}
+.goblet{
+	grid-area: 2/4/2/4;
+}
+.circlet{
+	grid-area: 2/6/2/6;
+}
+.sands_cap, .goblet_cap, .circlet_cap, .ER, .ER1{
+	font-size: max(1.1vw, 1.8vh);
+	justify-self: center;
+	align-self: center;
+}
+.sands_cap{
+	grid-area: 4/2/4/2;
+}
+.goblet_cap{
+	grid-area: 4/4/4/4;
+}
+.circlet_cap{
+	grid-area: 4/6/4/6;
+}
+.ER{
+	grid-area: 6/2/6/7;
+}
+.ER1{
+	font-size: max(0.9vw, 1.6vh);
+	grid-area: 8/2/8/7;
+}
+
+/* #endregion */
+
+
+/* #region arts */
+.artifacts{
+	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-template-rows: 0.1fr 1fr 0.1fr;
+	grid-area: 6/2/6/2;
+}
+.artifacts_title{
+	font-size: max(2vw, 2vh);
+	grid-area: 3/2/3/2;
+}
+.top1, .top2, .top3{
+	position: absolute;
+	background-size: contain;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.top1{
+	grid-area: 2/2/2/2;
+}
+.top2{
+	grid-area: 2/4/2/4;
+}
+.top3{
+	grid-area: 2/6/2/6;
+}
+/* #endregion */
+
+
+
+
+
 .advice1, .advice2, .advice3{
 	background-color: var(--background);
 	border-style: solid;
@@ -96,12 +561,10 @@ a:active{
 	position: relative;
 	justify-content:center;
 }
-.advice1{
-	grid-area: 2/2/2/2;
-}
-.advice2{
-	grid-area: 4/2/4/2;
-}
-.advice3{
-	grid-area: 6/2/6/2;
+
+
+@media (max-width: 750px) {
+	.w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8{
+	background-size: max(100%, 8vw);
+	}
 }

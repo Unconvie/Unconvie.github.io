@@ -1,16 +1,32 @@
+if(window.innerWidth > window.innerHeight){
+	new Swiper('.slider', {
+		direction: "horizontal",
+		speed: 2400,
+		mousewheel:{
+			enabled: true,
+			sensitivity:9.45
+		},
+		spaceBetween: 7,
+		parallax:true,
+		// freeMode:true
+	})
+}
+else{
+	new Swiper('.slider', {
+		direction: "vertical",
+		speed: 2400,
+		mousewheel:{
+			enabled: true,
+			sensitivity:9.45
+		},
+		spaceBetween: 7,
+		parallax:true,
+		// freeMode:true
+	})
+}
 
-new Swiper('.slider', {
-	direction: "horizontal",
-	speed: 2400,
-	mousewheel:{
-		enabled: true,
-		sensitivity:9.45
-	},
-	spaceBetween: 7,
-	parallax:true,
-	// freeMode:true
-	
-})
+
+
 if(localStorage.getItem('theme')==='day-theme'){
 	document.getElementById('day-theme').setAttribute('href', 'css/day-theme.css');
 }

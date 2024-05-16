@@ -1,24 +1,10 @@
-new Swiper('.slider', {
-	direction: "horizontal",
-	speed: 2400,
-	mousewheel:{
-		enabled: true,
-		sensitivity:9.45
-	},
-	spaceBetween: 7,
-	parallax:true,
-	// freeMode:true
-	
-})
-
 window.addEventListener('load', init);
 function init(){
 	
-	document.getElementsByClassName('night-theme-btn')[0].addEventListener('click', ()=>{
-		document.getElementById('day-theme').setAttribute('href', 'css/day-theme.css');
-	});
-	document.getElementsByClassName('day-theme-btn')[0].addEventListener('click', ()=>{
-		document.getElementById('day-theme').setAttribute('href', 'css/main.css');
-	});
-	
+	if(localStorage.getItem('theme')==='day-theme'){
+		document.getElementById('day-theme').setAttribute('href', 'weap-day.css');
+	}
+	else if(localStorage.getItem('theme')==='night-theme'){
+		document.getElementById('day-theme').setAttribute('href', 'weap-night.css');
+	}
 }

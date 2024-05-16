@@ -874,6 +874,7 @@ a:active{
 	transition: var(--transition) !important;
 }
 .t_1_text{
+	
 	color: var(--color1);
 	text-shadow: var(--text_shadow1);
 }
@@ -1166,6 +1167,22 @@ html, body{
 }
 @media(max-width: 750px){
 	/* для экрана меньше 750px */
+
+	.teams-info, .arts-info, .weap-info, .talents-info, .quick-guide{
+		font-size: 2.4vh;
+	}
+	.arts-info{
+		justify-self: flex-end;
+		grid-area: 1/1/1/1;
+	}
+
+	.weap-info{
+		grid-area: 1/5/1/5;
+		justify-self: flex-start;
+	}
+	.t_1_text{
+		font-size: max(1.25vh,0.5vw) !important;
+	}
 
 	.site__name{
 		font-size: 2.4vh !important;

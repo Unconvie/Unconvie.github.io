@@ -1,14 +1,19 @@
-@font-face{
-	font-family: raleway_f;
-	src:url(../fonts/raleway-regular.woff2);
-}
-@font-face{
-	font-family: raleway_f;
-	src:url(../fonts/raleway-black.woff2);
-	font-weight: 900;
+:root{
+	--color1:rgb(66, 75, 156);
+	--text_shadow1: 0 0 18px rgb(92, 92, 189);
+	--color2:rgb(17, 12, 88);
+	--text_shadow2: 0 0 18px rgb(37, 31, 126);
+	--background: rgba(186, 204, 230, 0.5);
+
+	--viniet:inset 0 0 220px rgba(231, 224, 177, 0.3);
+
+	--border_color1: rgba(95, 147, 243, 0.3);
+	--box_shadow1: 0 0 18px rgba(70, 109, 182, 0.3);
+	--border_color2: rgba(184, 95, 243, 0.3);
+	--box_shadow2: 0 0 18px rgba(131, 67, 173, 0.3);
+	--talents_color: rgba(79, 138, 122, 0.4);
 }
 .weap-back{
-	justify-self: flex-start;
 	color: var(--color1);
 	text-shadow: var(--text_shadow1);
 	grid-area: 1/2/1/2;
@@ -31,21 +36,10 @@ a:active{
 *{
 	margin:0;
 }
-:root{
-	--color1:rgb(66, 75, 156);
-	--text_shadow1: 0 0 18px rgb(92, 92, 189);
-	--color2:rgb(17, 12, 88);
-	--text_shadow2: 0 0 18px rgb(37, 31, 126);
-	--background: rgba(186, 204, 230, 0.5);
-
-	--viniet:inset 0 0 220px rgba(231, 224, 177, 0.3);
-
-	--border_color1: rgba(95, 147, 243, 0.3);
-	--box_shadow1: 0 0 18px rgba(70, 109, 182, 0.3);
-	--border_color2: rgba(184, 95, 243, 0.3);
-	--box_shadow2: 0 0 18px rgba(131, 67, 173, 0.3);
-	--talents_color: rgba(79, 138, 122, 0.4);
+.night{
+	display: none;
 }
+
 .bg{
 	height:100vh;
 	position:absolute;

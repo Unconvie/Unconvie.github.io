@@ -6,85 +6,116 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CharGuide</title>
 				<link rel="shortcut icon" type="image/png" href="img/cite-icon.png">
-				<link rel="stylesheet" href="guide-night.css">
-				<link rel="stylesheet" href="guide-day.css">
+				<link id="day-theme" rel="stylesheet" href="guide-night.css">
+				<link disabled rel="stylesheet" href="guide-day.css">
+				<script src="guide.js" defer></script>
 
     </head>
     <body>
 			<div class="table">
 				<div class="day bg" style="background-image: url(day-sky.jpg);"></div>
-				<div class="night bg" style="background-image: url(night-sky.png);"></div>
-				<div class="guide-back"><a href="../index.html">Back</a></div>
+				<div class="night bg" style="background-image: url(night-sky.jpg);"></div>
 
 				<div class="row">
-					<div class="article"></div>
+					<div class="article">
+						<div class="xiao_art" style="background-image: url(../img/Xiao1.png);"></div>
+					</div>
 					<div class="article_title">XIAO GUIDE</div>
 	
 					<div class="weapons">
-						<div class="w1">1</div>
-						<div class="w2">2</div>
-						<div class="w3">3</div>
-						<div class="w4">4</div>
-						<div class="w5">5</div>
-						<div class="w6">6</div>
-						<div class="w7">7</div>
-						<div class="w8">8</div>
+						<div class="w1" style="background-image: url(../img/weapon/Primordial_Jade_Winged-Spear.png);"></div>
+						<div class="w2" style="background-image: url(../img/weapon/Staff_of_Homa.png);"></div>
+						<div class="w3" style="background-image: url(../img/weapon/Calamity_Queller.png);"></div>
+						<div class="w4" style="background-image: url(../img/weapon/Vortex_Vanquisher.png);"></div>
+						<div class="w5" style="background-image: url(../img/weapon/Lithic_Spear.png);"></div>
+						<div class="w6" style="background-image: url(../img/weapon/Deathmatch.png);"></div>
+						<div class="w7" style="background-image: url(../img/weapon/Blackcliff_Pole.png);"></div>
+						<div class="w8" style="background-image: url(../img/weapon/Prospector\'s_Drill.png);"></div>
 					</div>
 					<div class="weapons_title">WEAPONS</div>
 	
 					<div class="talents">
-						<div class="c1">c1</div>
-						<div class="c2">c2</div>
-						<div class="t1">t1</div>
-						<div class="t2">t2</div>
-						<div class="t3">t3</div>
-						<div class="t4">t4</div>
-						<div class="t5">t5</div>
-						<div class="t6">t6</div>
+						<div class="c1">C0/C1</div>
+						<div class="c2">C6</div>
+						<div class="t1" style="background-image: url(../img/talents/NA.png);"></div>
+						<div class="t2" style="background-image: url(../img/talents/Q.png);"></div>
+						<div class="t3" style="background-image: url(../img/talents/E.png);"></div>
+						<div class="t4" style="background-image: url(../img/talents/E.png);"></div>
+						<div class="t5" style="background-image: url(../img/talents/NA.png);"></div>
+						<div class="t6" style="background-image: url(../img/talents/Q.png);"></div>
 					</div>
 					<div class="talents_title">TALENTS</div>
 				</div>
 
 
 				<div class="artifacts">
-					<div class="top1">top1</div>
-					<div class="top2">top2</div>
-					<div class="top3">top3</div>
+					<div class="top1" style="background-image: url(../img/artifacts/purple.png);"></div>
+					<div class="top2" style="background-image: url(../img/artifacts/charge.png);"></div>
+					<div class="top3" style="background-image: url(../img/artifacts/glad-anemo.png);"></div>
 				</div>
 				<div class="artifacts_title">ARTIFACTS</div>
 
-				<div class="mats"></div>
+				<div class="mats">
+					<div class="up">
+						<div class="first">Ascension Materials</div>
+						<div class="mat1" style="background-image: url(../img/mats/chunk1.png);"></div> <div class="chunk_1_cap">x1</div>
+						<div class="mat2" style="background-image: url(../img/mats/chunk2.png);"></div> <div class="chunk_2_cap">x9</div>
+						<div class="mat3" style="background-image: url(../img/mats/chunk3.png);"></div> <div class="chunk_3_cap">x9</div>
+						<div class="mat4" style="background-image: url(../img/mats/chunk4.png);"></div> <div class="chunk_4_cap">x6</div>
+						<div class="mat5" style="background-image: url(../img/mats/boss.png);"></div> <div class="boss_cap">x46</div>
+					</div>
+					<div class="down">
+						<div class="second">Talent Upgrade</div>
+
+						<div class="mat6" style="background-image: url(../img/mats/mob1.png);"></div> <div class="mob_11_cap">x18</div>
+						<div class="mat7" style="background-image: url(../img/mats/mob2.png);"></div> <div class="mob_12_cap">x30</div>
+						<div class="mat8" style="background-image: url(../img/mats/mob3.png);"></div> <div class="mob_13_cap">x36</div>
+						<div class="mat9"  style="background-image: url(../img/mats/flower.png);"></div> <div class="flower_cap">x168</div>
+						<div class="mora1">420.000 Mora</div>
+						<div class="mat10" style="background-image: url(../img/mats/book1.png);"></div> <div class="book_1_cap">x9</div>
+						<div class="mat11" style="background-image: url(../img/mats/book2.png);"></div> <div class="book_2_cap">x63</div>
+						<div class="mat12" style="background-image: url(../img/mats/book3.png);"></div> <div class="book_3_cap">x114</div>
+
+						<div class="mat13" style="background-image: url(../img/mats/week.png);"></div> <div class="week_cap">x18</div>
+						<div class="mat14" style="background-image: url(../img/mats/mob1.png);"></div> <div class="mob_21_cap">x18</div>
+						<div class="mat15" style="background-image: url(../img/mats/mob2.png);"></div> <div class="mob_22_cap">x66</div>
+						<div class="mat16" style="background-image: url(../img/mats/mob3.png);"></div> <div class="mob_23_cap">x93</div>
+						<div class="mat17" style="background-image: url(../img/mats/crown.png);"></div> <div class="crown_cap">x3</div>
+						<div class="mora2">4.950.000 Mora</div>
+					</div>
+				</div>
 				<div class="mats_title">MATERIALS</div>
 
 				<div class="teams">
-					<div class="p1">p1</div>
-					<div class="p2">p2</div>
-					<div class="p3">p3</div>
-					<div class="p4">p4</div>
-					<div class="p5">p5</div>
-					<div class="p6">p6</div>
-					<div class="p7">p7</div>
-					<div class="p8">p8</div>
-					<div class="p9">p9</div>
-					<div class="p10">p10</div>
-					<div class="p11">p11</div>
-					<div class="p12">p12</div>
-					<div class="p13">p13</div>
-					<div class="p14">p14</div>
-					<div class="p15">p15</div>
+					<div class="p1" style="background-image: url(../img/screen-7/Faruzan_Icon.png);"></div>
+					<div class="p2" style="background-image: url(../img/screen-7/Xianyun_Icon.png);"></div>
+					<div class="p3" style="background-image: url(../img/screen-7/Furina_Icon.png);"></div>
+					<div class="p4" style="background-image: url(../img/screen-7/Faruzan_Icon.png);"></div>
+					<div class="p5" style="background-image: url(../img/screen-7/Bennett_Icon.png);"></div>
+					<div class="p6" style="background-image: url(../img/screen-7/Zhongli_Icon.png);"></div>
+					<div class="p7" style="background-image: url(../img/screen-7/Faruzan_Icon.png);"></div>
+					<div class="p8" style="background-image: url(../img/screen-7/Furina_Icon.png);"></div>
+					<div class="p9" style="background-image: url(../img/screen-7/Bennett_Icon.png);"></div>
+					<div class="p10" style="background-image: url(../img/screen-7/Xianyun_Icon.png);"></div>
+					<div class="p11" style="background-image: url(../img/screen-7/Sucrose_Icon.png);"></div>
+					<div class="p12" style="background-image: url(../img/screen-7/Bennett_Icon.png);"></div>
+					<div class="p13" style="background-image: url(../img/screen-7/Sucrose_Icon.png);"></div>
+					<div class="p14" style="background-image: url(../img/screen-7/Diona_Icon.png);"></div>
+					<div class="p15" style="background-image: url(../img/screen-7/Rosaria_Icon.png);"></div>
 				</div>
 				<div class="teams_title">TEAMS</div>
 
 				<div class="stats">
-					<div class="goblet">goblet</div>
-					<div class="sands">sands</div>
-					<div class="circlet">hat</div>
+					<div class="goblet" style="background-image: url(../img/artifacts/goblet.png);"></div>
+					<div class="sands" style="background-image: url(../img/artifacts/sands.png);"></div>
+					<div class="circlet" style="background-image: url(../img/artifacts/circlet.png);"></div>
 
-					<div class="goblet_cap">anemo</div>
-					<div class="sands_cap">ATK</div>
-					<div class="circlet_cap">CRIT</div>
+					<div class="goblet_cap">Anemo%<br>ATK%</div>
+					<div class="sands_cap">ATK%</div>
+					<div class="circlet_cap">CRIT%</div>
 
-					<div class="ER">ER</div>
+					<div class="ER">CRIT% > ATK% > ER%*</div>
+					<div class="ER1">*130% ER</div>
 				</div>
 
 
