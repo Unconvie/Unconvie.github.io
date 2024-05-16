@@ -69,6 +69,9 @@ a:active{
 	position: relative;
 	justify-content:center;
 }
+.talents{
+	background-color:rgba(9, 85, 69, 0.192);
+}
 .article_title, .weapons_title, .talents_title, .artifacts_title, .mats_title, .teams_title{
 	color: var(--color1);
 	text-shadow: var(--text-shadow1);
@@ -91,7 +94,7 @@ a:active{
 .article{
 	box-shadow: 0 0 200px rgba(238, 222, 81, 0.342);
 	
-	background-image: url("../img/day/5/base.jpg");
+	background-image: url("../img/screen-3/back.jpg");
 	background-size: cover;
 	height: 96%;
 	width: 100%;
@@ -113,6 +116,7 @@ a:active{
 }
 
 .article_title{
+	text-shadow: 0 0 40px rgb(226, 108, 230);
 	font-size: max(3vw, 3vh);
 	grid-area: 1/2/3/2;
 }
@@ -175,6 +179,7 @@ a:active{
 
 /* #region talents */
 .talents{
+	box-shadow: inset 0 0 150px rgba(15, 100, 104, 0.897);
 	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
 	grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr;
 	grid-area: 2/6/5/6;
@@ -240,17 +245,33 @@ a:active{
 	align-self: center;
 }
 .first, .second, .mora1, .mora2{
+	box-shadow: 0 0 20px rgba(81, 227, 238, 0.226);
 	background-color:rgba(0, 0, 0, 0.1);
 	border-style: solid;
+	padding: 0.2vw;
 	border-radius: 0px 9px 0px 9px;
 	border-width: 1px;
 	border-color: var(--color2);
 }
 .mora1, .mora2{
+	
+	justify-self: flex-end;
 	color: var(--color2);
 }
 
-
+.coin1, .coin2{
+	margin-left: 1vw;
+	grid-area: 3/6/3/6;
+	background-size: contain;
+	height: 5vh;
+	width: 5.5vw;
+	justify-self: flex-start;
+	align-self: center;
+	background-repeat: no-repeat;
+}
+.coin2{
+	grid-area: 9/6/9/6;
+}
 .mat1, .mat2, .mat3, .mat4, .mat5, .mat6, .mat7, .mat8, .mat9, .mat10, .mat11, .mat12, .mat13, .mat14, .mat15, .mat16, .mat17{
 	background-size: contain;
 	height: 7vh;
@@ -335,7 +356,7 @@ a:active{
 	grid-area: 2/8/2/8;
 }
 .mora1{
-	grid-area: 3/4/3/7;
+	grid-area: 3/4/3/4;
 }
 .second{
 	grid-area: 4/4/4/7;
@@ -389,7 +410,7 @@ a:active{
 	grid-area: 8/8/8/8;
 }
 .mora2{
-	grid-area: 9/4/9/7;
+	grid-area: 9/4/9/6;
 }
 /* #endregion */
 
@@ -517,6 +538,7 @@ a:active{
 
 /* #region arts */
 .artifacts{
+	box-shadow: inset 0 0 50px rgba(224, 200, 63, 0.274);
 	grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
 	grid-template-rows: 0.1fr 1fr 0.1fr;
 	grid-area: 6/2/6/2;
