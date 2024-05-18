@@ -15,6 +15,7 @@
 	--talents_color: rgba(79, 138, 122, 0.4);
 }
 .guide-back{
+	z-index: 100;
 	color: var(--color1);
 	text-shadow: var(--text_shadow1);
 	grid-area: 1/2/1/2;
@@ -114,7 +115,6 @@ a:active{
 	background-position: top;
 	background-repeat: no-repeat;
 }
-
 .article_title{
 	text-shadow: 0 0 40px rgb(226, 108, 230);
 	font-size: max(3vw, 3vh);
@@ -260,7 +260,7 @@ a:active{
 }
 
 .coin1, .coin2{
-	margin-left: 1vw;
+	margin-right: 1vw;
 	grid-area: 3/6/3/6;
 	background-size: contain;
 	height: 5vh;
@@ -356,7 +356,7 @@ a:active{
 	grid-area: 2/8/2/8;
 }
 .mora1{
-	grid-area: 3/4/3/4;
+	grid-area: 3/4/3/6;
 }
 .second{
 	grid-area: 4/4/4/7;

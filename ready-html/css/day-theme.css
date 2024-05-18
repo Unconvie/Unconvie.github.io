@@ -1,10 +1,8 @@
 
 /*#region theme*/
 .day-theme-btn{
-	
 	transition: opacity 0.4s;
 	cursor: pointer;
-
 	z-index: 1;
 	border: none;
 	outline: none;
@@ -13,7 +11,7 @@
 	background-color: rgba(37, 52, 85, 0.5);
 	position: absolute;
 	background-size: cover;
-	border-radius:  110px 110px 110px 110px;
+	border-radius: 110px 110px 110px 110px;
 	margin:0.5vw;
 }
 .day-theme-btn:hover{
@@ -122,6 +120,18 @@ a:active{
 	font-family: raleway_f;
 	src:url(../fonts/raleway-black.woff2);
 	font-weight: 900;
+}
+.form{
+	z-index: 100;
+	font-size: min(4.1vw, 4vh);
+	letter-spacing: 0.2vw;
+	justify-self: flex-end;
+	grid-area: 1/2/1/2;
+	margin-top: 40px;
+	/* margin-top: 70px; */
+	/* margin-left: 12px; */
+
+
 }
 
 /* ПЕРВЫЙ СЛАЙД */

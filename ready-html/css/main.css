@@ -13,6 +13,7 @@
 	margin:0.5vw;
 }
 .night-theme-btn-icon{
+	
 	opacity:0;
 	transition: opacity 0.4s;
 
@@ -81,7 +82,18 @@ a:active{
 	will-change: transform;
 	transition: var(--transition) !important;
 }
+.form{
+	z-index: 100;
+	font-size: min(4.1vw, 4vh);
+	letter-spacing: 0.2vw;
+	justify-self: flex-end;
+	grid-area: 1/2/1/2;
+	margin-top: 40px;
+	/* margin-top: 70px; */
+	/* margin-left: 12px; */
 
+
+}
 
 :root{
 	/* --transition: 2s cubic-bezier(.2, .6, 0, 1); */

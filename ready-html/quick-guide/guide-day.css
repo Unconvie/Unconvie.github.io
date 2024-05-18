@@ -14,6 +14,7 @@
 	--talents_color: rgba(79, 138, 122, 0.4);
 }
 .guide-back{
+	z-index: 100;
 	justify-self: flex-start;
 	color: var(--color1);
 	text-shadow: var(--text_shadow1);
@@ -260,15 +261,16 @@ a:active{
 }
 
 .coin1, .coin2{
-	margin-left: 1vw;
+	margin-right: 1vw;
 	grid-area: 3/6/3/6;
 	background-size: contain;
-	height: 5vh;
-	width: 5.5vw;
+	height: 100%;
+	width: 100%;
 	justify-self: flex-start;
 	align-self: center;
 	background-repeat: no-repeat;
 }
+
 .coin2{
 	grid-area: 9/6/9/6;
 }
@@ -356,7 +358,7 @@ a:active{
 	grid-area: 2/8/2/8;
 }
 .mora1{
-	grid-area: 3/4/3/4;
+	grid-area: 3/4/3/6;
 }
 .second{
 	grid-area: 4/4/4/7;
