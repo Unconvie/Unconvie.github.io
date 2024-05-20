@@ -101,7 +101,7 @@ img{
 
 	--viniet:inset 0 0 220px rgb(0, 0, 0, 0.3);
 	--index: calc(1vw + 1vh);
-	--color1:	color: rgb(225, 241, 255);
+	--color1: rgb(225, 241, 255);
 	--text_shadow: 0 0 5px rgb(135, 166, 194);
 }
 

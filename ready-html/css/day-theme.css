@@ -25,7 +25,6 @@
 	opacity:0;
 	transition: opacity 0.4s;
 
-	z-index: 1;
 	border: none;
 	outline: none;
 	background-repeat: no-repeat;
