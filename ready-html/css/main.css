@@ -16,7 +16,6 @@
 	
 	opacity:0;
 	transition: opacity 0.4s;
-
 	border: none;
 	outline: none;
 	
@@ -82,15 +81,15 @@ a:active{
 	will-change: transform;
 	transition: var(--transition) !important;
 }
+img{
+	height:max(5vw, 10vh);
+}
 .form{
+	background-size: contain;
 	z-index: 100;
-	font-size: min(4.1vw, 4vh);
-	letter-spacing: 0.2vw;
 	justify-self: flex-end;
 	grid-area: 1/2/1/2;
 	margin-top: 40px;
-	/* margin-top: 70px; */
-	/* margin-left: 12px; */
 
 
 }
@@ -1329,7 +1328,7 @@ html, body{
 	}
 	.weap_tier_3_cap{
 		grid-area: 6/5/6/5;
-		font-size: 2vh;
+		font-size: 1.6vh !important;
 	}
 	/* ------------------------------ */
 

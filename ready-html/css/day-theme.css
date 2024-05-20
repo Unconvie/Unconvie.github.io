@@ -121,15 +121,15 @@ a:active{
 	src:url(../fonts/raleway-black.woff2);
 	font-weight: 900;
 }
+img{
+	height:max(5vw, 10vh);
+}
 .form{
+	background-size: contain;
 	z-index: 100;
-	font-size: min(4.1vw, 4vh);
-	letter-spacing: 0.2vw;
 	justify-self: flex-end;
 	grid-area: 1/2/1/2;
 	margin-top: 40px;
-	/* margin-top: 70px; */
-	/* margin-left: 12px; */
 
 
 }
